@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CA3FB3D1A771E15003010D4 /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
+		6CA3FB3E1A771E15003010D4 /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
+		6CA3FB401A771E3F003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA3FB411A771E41003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB02D821A7605BD00868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB02D7C1A7605BD00868654 /* HMAC.framework */; };
+		6CB02D8F1A7605BD00868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
+		6CB02DC31A76097A00868654 /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB02DB81A76097A00868654 /* HMAC.framework */; };
+		6CB02DD41A760D4100868654 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
+		6CB02DD51A760D4100868654 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
+		6CB02DD61A760D8100868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
+		6CB02DDA1A7610B000868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CB02D891A7605BD00868654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB02D731A7605BD00868654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB02D7B1A7605BD00868654;
+			remoteInfo = HMAC;
+		};
+		6CB02DC41A76097A00868654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CB02D731A7605BD00868654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB02DB71A76097A00868654;
+			remoteInfo = HMAC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAC_bridge.m; sourceTree = "<group>"; };
+		6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC_bridge.h; sourceTree = "<group>"; };
+		6CB02D7C1A7605BD00868654 /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB02D801A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB02D811A7605BD00868654 /* HMAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC.h; sourceTree = "<group>"; };
+		6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HMAC-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB02D8D1A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB02D8E1A7605BD00868654 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
+		6CB02D981A7605EE00868654 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		6CB02D9B1A76092B00868654 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		6CB02D9D1A76092B00868654 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		6CB02D9E1A76092B00868654 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		6CB02D9F1A76092B00868654 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		6CB02DA01A76092B00868654 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		6CB02DA21A76092B00868654 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		6CB02DA31A76092B00868654 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		6CB02DA41A76092B00868654 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		6CB02DA91A76092B00868654 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		6CB02DAB1A76092B00868654 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		6CB02DAE1A76092B00868654 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		6CB02DAF1A76092B00868654 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		6CB02DB11A76092B00868654 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		6CB02DB21A76092B00868654 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CB02DB81A76097A00868654 /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HMAC-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB02DD11A760C3400868654 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6CB02DD21A760C3400868654 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CB02DD31A760D4100868654 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CB02D781A7605BD00868654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02D841A7605BD00868654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DB41A76097A00868654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DBF1A76097A00868654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02DC31A76097A00868654 /* HMAC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CB02D721A7605BD00868654 = {
+			isa = PBXGroup;
+			children = (
+				6CB02DD21A760C3400868654 /* README.md */,
+				6CB02DD11A760C3400868654 /* LICENSE */,
+				6CB02D981A7605EE00868654 /* Cartfile */,
+				6CB02D7E1A7605BD00868654 /* HMAC */,
+				6CB02D8B1A7605BD00868654 /* HMACTests */,
+				6CB02D991A76092B00868654 /* xcconfigs */,
+				6CB02D7D1A7605BD00868654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CB02D7D1A7605BD00868654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D7C1A7605BD00868654 /* HMAC.framework */,
+				6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */,
+				6CB02DB81A76097A00868654 /* HMAC.framework */,
+				6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CB02D7E1A7605BD00868654 /* HMAC */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D811A7605BD00868654 /* HMAC.h */,
+				6CB02DD31A760D4100868654 /* HMAC.swift */,
+				6CB02D7F1A7605BD00868654 /* Supporting Files */,
+				6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */,
+				6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */,
+			);
+			path = HMAC;
+			sourceTree = "<group>";
+		};
+		6CB02D7F1A7605BD00868654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D801A7605BD00868654 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CB02D8B1A7605BD00868654 /* HMACTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D8E1A7605BD00868654 /* HMACTests.swift */,
+				6CB02D8C1A7605BD00868654 /* Supporting Files */,
+			);
+			path = HMACTests;
+			sourceTree = "<group>";
+		};
+		6CB02D8C1A7605BD00868654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D8D1A7605BD00868654 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CB02D991A76092B00868654 /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D9A1A76092B00868654 /* Base */,
+				6CB02DA71A76092B00868654 /* iOS */,
+				6CB02DAC1A76092B00868654 /* Mac OS X */,
+				6CB02DB21A76092B00868654 /* README.md */,
+			);
+			name = xcconfigs;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		6CB02D9A1A76092B00868654 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D9B1A76092B00868654 /* Common.xcconfig */,
+				6CB02D9C1A76092B00868654 /* Configurations */,
+				6CB02DA11A76092B00868654 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6CB02D9C1A76092B00868654 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02D9D1A76092B00868654 /* Debug.xcconfig */,
+				6CB02D9E1A76092B00868654 /* Profile.xcconfig */,
+				6CB02D9F1A76092B00868654 /* Release.xcconfig */,
+				6CB02DA01A76092B00868654 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		6CB02DA11A76092B00868654 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02DA21A76092B00868654 /* Application.xcconfig */,
+				6CB02DA31A76092B00868654 /* Framework.xcconfig */,
+				6CB02DA41A76092B00868654 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		6CB02DA71A76092B00868654 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */,
+				6CB02DA91A76092B00868654 /* iOS-Base.xcconfig */,
+				6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */,
+				6CB02DAB1A76092B00868654 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		6CB02DAC1A76092B00868654 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */,
+				6CB02DAE1A76092B00868654 /* Mac-Base.xcconfig */,
+				6CB02DAF1A76092B00868654 /* Mac-DynamicLibrary.xcconfig */,
+				6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */,
+				6CB02DB11A76092B00868654 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6CB02D791A7605BD00868654 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02D821A7605BD00868654 /* HMAC.h in Headers */,
+				6CA3FB401A771E3F003010D4 /* HMAC_bridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DB51A76097A00868654 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02DDA1A7610B000868654 /* HMAC.h in Headers */,
+				6CA3FB411A771E41003010D4 /* HMAC_bridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6CB02D7B1A7605BD00868654 /* HMAC-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB02D921A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-Mac" */;
+			buildPhases = (
+				6CB02D771A7605BD00868654 /* Sources */,
+				6CB02D781A7605BD00868654 /* Frameworks */,
+				6CB02D791A7605BD00868654 /* Headers */,
+				6CB02D7A1A7605BD00868654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HMAC-Mac";
+			productName = HMAC;
+			productReference = 6CB02D7C1A7605BD00868654 /* HMAC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CB02D861A7605BD00868654 /* HMAC-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB02D951A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-MacTests" */;
+			buildPhases = (
+				6CB02D831A7605BD00868654 /* Sources */,
+				6CB02D841A7605BD00868654 /* Frameworks */,
+				6CB02D851A7605BD00868654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB02D8A1A7605BD00868654 /* PBXTargetDependency */,
+			);
+			name = "HMAC-MacTests";
+			productName = HMACTests;
+			productReference = 6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CB02DB71A76097A00868654 /* HMAC-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB02DCB1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOS" */;
+			buildPhases = (
+				6CB02DB31A76097A00868654 /* Sources */,
+				6CB02DB41A76097A00868654 /* Frameworks */,
+				6CB02DB51A76097A00868654 /* Headers */,
+				6CB02DB61A76097A00868654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HMAC-iOS";
+			productName = HMAC;
+			productReference = 6CB02DB81A76097A00868654 /* HMAC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CB02DC11A76097A00868654 /* HMAC-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB02DCE1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOSTests" */;
+			buildPhases = (
+				6CB02DBE1A76097A00868654 /* Sources */,
+				6CB02DBF1A76097A00868654 /* Frameworks */,
+				6CB02DC01A76097A00868654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CB02DC51A76097A00868654 /* PBXTargetDependency */,
+			);
+			name = "HMAC-iOSTests";
+			productName = HMACTests;
+			productReference = 6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CB02D731A7605BD00868654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Norio Nomura";
+				TargetAttributes = {
+					6CB02D7B1A7605BD00868654 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					6CB02D861A7605BD00868654 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					6CB02DB71A76097A00868654 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					6CB02DC11A76097A00868654 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 6CB02D761A7605BD00868654 /* Build configuration list for PBXProject "HMAC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6CB02D721A7605BD00868654;
+			productRefGroup = 6CB02D7D1A7605BD00868654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CB02D7B1A7605BD00868654 /* HMAC-Mac */,
+				6CB02D861A7605BD00868654 /* HMAC-MacTests */,
+				6CB02DB71A76097A00868654 /* HMAC-iOS */,
+				6CB02DC11A76097A00868654 /* HMAC-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CB02D7A1A7605BD00868654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02D851A7605BD00868654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DB61A76097A00868654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DC01A76097A00868654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CB02D771A7605BD00868654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA3FB3D1A771E15003010D4 /* HMAC_bridge.m in Sources */,
+				6CB02DD41A760D4100868654 /* HMAC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02D831A7605BD00868654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02D8F1A7605BD00868654 /* HMACTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DB31A76097A00868654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA3FB3E1A771E15003010D4 /* HMAC_bridge.m in Sources */,
+				6CB02DD51A760D4100868654 /* HMAC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB02DBE1A76097A00868654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB02DD61A760D8100868654 /* HMACTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CB02D8A1A7605BD00868654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB02D7B1A7605BD00868654 /* HMAC-Mac */;
+			targetProxy = 6CB02D891A7605BD00868654 /* PBXContainerItemProxy */;
+		};
+		6CB02DC51A76097A00868654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB02DB71A76097A00868654 /* HMAC-iOS */;
+			targetProxy = 6CB02DC41A76097A00868654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6CB02D901A7605BD00868654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02D9D1A76092B00868654 /* Debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6CB02D911A7605BD00868654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02D9F1A76092B00868654 /* Release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CB02D931A7605BD00868654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = HMAC/Info.plist;
+			};
+			name = Debug;
+		};
+		6CB02D941A7605BD00868654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = HMAC/Info.plist;
+			};
+			name = Release;
+		};
+		6CB02D961A7605BD00868654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HMACTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CB02D971A7605BD00868654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HMACTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6CB02DCC1A76097A00868654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = HMAC/Info.plist;
+			};
+			name = Debug;
+		};
+		6CB02DCD1A76097A00868654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = HMAC/Info.plist;
+			};
+			name = Release;
+		};
+		6CB02DCF1A76097A00868654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HMACTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CB02DD01A76097A00868654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HMACTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CB02D761A7605BD00868654 /* Build configuration list for PBXProject "HMAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB02D901A7605BD00868654 /* Debug */,
+				6CB02D911A7605BD00868654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB02D921A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB02D931A7605BD00868654 /* Debug */,
+				6CB02D941A7605BD00868654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB02D951A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB02D961A7605BD00868654 /* Debug */,
+				6CB02D971A7605BD00868654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB02DCB1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB02DCC1A76097A00868654 /* Debug */,
+				6CB02DCD1A76097A00868654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB02DCE1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB02DCF1A76097A00868654 /* Debug */,
+				6CB02DD01A76097A00868654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CB02D731A7605BD00868654 /* Project object */;
+}
