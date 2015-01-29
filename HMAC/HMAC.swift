@@ -11,8 +11,10 @@ import Foundation
 // https://tools.ietf.org/html/rfc2202
 
 public class HMAC {
-    public typealias Algorithm = HMAC_bridge_Algorithm
-    
+    public enum Algorithm: CUnsignedInt {
+        case SHA1, MD5, SHA256, SHA384, SHA512, SHA224
+    }
+
     typealias Context = UnsafeMutablePointer<HMAC_bridge_Context>
     
     var context = Context.alloc(1)
@@ -37,7 +39,7 @@ public class HMAC {
     
     private init(algorithm: Algorithm, key: UnsafePointer<Void>, keyLength: Int) {
         self.algorithm = algorithm
-        HMAC_bridge_Init(context, algorithm, key, UInt(keyLength))
+        HMAC_bridge_Init(context, algorithm.bridgedValue, key, UInt(keyLength))
     }
     
     public func update(string: String) -> HMAC {
@@ -110,7 +112,7 @@ extension HMAC {
     }
 }
 
-extension HMAC_bridge_Algorithm {
+extension HMAC.Algorithm {
     var digestLength: Int {
         switch self {
         case .SHA1: return Int(HMAC_bridge_SHA1_DIGEST_LENGTH)
@@ -119,6 +121,17 @@ extension HMAC_bridge_Algorithm {
         case .SHA384: return Int(HMAC_bridge_SHA384_DIGEST_LENGTH)
         case .SHA512: return Int(HMAC_bridge_SHA512_DIGEST_LENGTH)
         case .SHA224: return Int(HMAC_bridge_SHA224_DIGEST_LENGTH)
+        }
+    }
+    
+    var bridgedValue: HMAC_bridge_Algorithm {
+        switch self {
+        case .SHA1: return .SHA1
+        case .MD5: return .MD5
+        case .SHA256: return .SHA256
+        case .SHA384: return .SHA384
+        case .SHA512: return .SHA512
+        case .SHA224: return .SHA224
         }
     }
 }
