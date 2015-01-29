@@ -17,7 +17,6 @@ namespace :test do
     t.scheme = 'HMAC-iOS'
     t.sdk = 'iphonesimulator'
     t.configuration = 'Release'
-    t.build_dir = 'build'
     destinations.each do |destination|
       t.add_destination(destination)
     end
@@ -29,7 +28,6 @@ namespace :test do
     t.scheme = 'HMAC-Mac'
     t.sdk = 'macosx'
     t.configuration = 'Release'
-    t.build_dir = 'build'
     t.formatter = 'xcpretty -c'
   end
 end
