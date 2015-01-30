@@ -113,6 +113,37 @@ extension HMAC {
 }
 
 extension HMAC.Algorithm {
+    public init?(_ string: String?) {
+        if let string = string {
+            self.init(string)
+        } else {
+            return nil
+        }
+    }
+    
+    public init?(_ string: String) {
+        switch string.uppercaseString {
+        case "SHA1": self = .SHA1
+        case "MD5": self = .MD5
+        case "SHA256": self = .SHA256
+        case "SHA384": self = .SHA384
+        case "SHA512": self = .SHA512
+        case "SHA224": self = .SHA224
+        default: return nil
+        }
+    }
+    
+    public var stringValue: String {
+        switch self {
+        case .SHA1: return "SHA1"
+        case .MD5: return "MD5"
+        case .SHA256: return "SHA256"
+        case .SHA384: return "SHA384"
+        case .SHA512: return "SHA512"
+        case .SHA224: return "SHA224"
+        }
+    }
+    
     var digestLength: Int {
         switch self {
         case .SHA1: return Int(HMAC_bridge_SHA1_DIGEST_LENGTH)
@@ -133,5 +164,11 @@ extension HMAC.Algorithm {
         case .SHA512: return .SHA512
         case .SHA224: return .SHA224
         }
+    }
+}
+
+extension HMAC.Algorithm: Printable {
+    public var description: String {
+        return stringValue
     }
 }
