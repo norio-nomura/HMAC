@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAC_bridge.m; sourceTree = "<group>"; };
 		6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC_bridge.h; sourceTree = "<group>"; };
-		6CA3FB861A774A7B003010D4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		6CA3FB861A774A7B003010D4 /* HMAC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HMAC.playground; sourceTree = "<group>"; };
 		6CB02D7C1A7605BD00868654 /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB02D801A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CB02D811A7605BD00868654 /* HMAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC.h; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		6CB02D721A7605BD00868654 = {
 			isa = PBXGroup;
 			children = (
-				6CA3FB861A774A7B003010D4 /* MyPlayground.playground */,
+				6CA3FB861A774A7B003010D4 /* HMAC.playground */,
 				6CB02DD21A760C3400868654 /* README.md */,
 				6CB02DD11A760C3400868654 /* LICENSE */,
 				6CB02D981A7605EE00868654 /* Cartfile */,
