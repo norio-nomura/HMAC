@@ -26,9 +26,14 @@ public struct HMAC {
     
     public init(algorithm: Algorithm, key string: String) {
         assert(!string.isEmpty, "key: String must not be empty.")
-        let key = string.cStringUsingEncoding(NSUTF8StringEncoding)
+        
+        // Passing String to UnsafePointer<Void> prameter is treated as UTF8 string ([UInt8]).
+        // But I can't find this behavior in Apple's document.
+        // So I use following forece unwrap style
+        
+        let key = string.cStringUsingEncoding(NSUTF8StringEncoding)!
         let length = string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-        self.init(algorithm: algorithm, key: key!, keyLength: length)
+        self.init(algorithm: algorithm, key: key, keyLength: length)
     }
     
     public init(algorithm: Algorithm, key array: [UInt8]) {
@@ -47,9 +52,9 @@ public struct HMAC {
     }
     
     public func update(string: String) -> HMAC {
-        let data = string.cStringUsingEncoding(NSUTF8StringEncoding)
-        let length = string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
-        return update(data!, dataLength: length)
+        return string.nulTerminatedUTF8.withUnsafeBufferPointer {
+            return self.update($0.baseAddress, dataLength: string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+        }
     }
     
     public func update(array: [UInt8]) -> HMAC {
