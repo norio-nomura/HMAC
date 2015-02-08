@@ -53,7 +53,7 @@ public struct HMAC {
     
     public func update(string: String) -> HMAC {
         return string.nulTerminatedUTF8.withUnsafeBufferPointer {
-            return self.update($0.baseAddress, dataLength: string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+            return self.update($0.baseAddress, dataLength: $0.count - 1)
         }
     }
     
