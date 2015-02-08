@@ -79,42 +79,6 @@ public struct HMAC {
         HMAC_bridge_Final(ctx.context, &hmac)
         return hmac
     }
-    
-    public func finalHexString() -> String {
-        return self.dynamicType.hexStringFromArray(final())
-    }
-}
-
-extension HMAC {
-    private static func convertHexDigit(c: UnicodeScalar) -> UInt8 {
-        switch c {
-        case UnicodeScalar("0")...UnicodeScalar("9"): return UInt8(c.value - UnicodeScalar("0").value)
-        case UnicodeScalar("a")...UnicodeScalar("f"): return UInt8(c.value - UnicodeScalar("a").value + 0xa)
-        case UnicodeScalar("A")...UnicodeScalar("F"): return UInt8(c.value - UnicodeScalar("A").value + 0xa)
-        default: fatalError("convertHexDigit: Invalid hex digit")
-        }
-    }
-    
-    public static func arrayFromHexString(var s: String) -> [UInt8]{
-        if s.hasPrefix("0x") {
-            s = suffix(s, countElements(s) - 2)
-        }
-        var g = s.unicodeScalars.generate()
-        var a = [UInt8]()
-        while let msn = g.next() {
-            if let lsn = g.next() {
-                a += [convertHexDigit(msn) << 4 | convertHexDigit(lsn)]
-            } else {
-                a += [convertHexDigit(msn) << 4]
-                assert(false, "arrayFromHexString: String must contain even number of characters")
-            }
-        }
-        return a
-    }
-    
-    public static func hexStringFromArray(a: [UInt8], uppercase: Bool = false) -> String {
-        return a.map{ String(format: uppercase ? "%02X" : "%02x", $0) }.reduce("", +)
-    }
 }
 
 extension HMAC.Algorithm {
