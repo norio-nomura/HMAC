@@ -4,6 +4,11 @@ cache:
     - vendor/bundle
 install:
   - bundle install --path=vendor/bundle --binstubs=vendor/bin
+  - brew update
+  - brew install carthage
+  - carthage update --use-submodules
+git:
+  submodules: false
 script:
   - bundle exec rake test:ios test:osx
 branches:
