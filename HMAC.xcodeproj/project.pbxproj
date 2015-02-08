@@ -19,6 +19,8 @@
 		6CB02DD51A760D4100868654 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
 		6CB02DD61A760D8100868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
 		6CB02DDA1A7610B000868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CF559DF1A86DDD70017695B /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF559DE1A86DDD70017695B /* Base32.framework */; };
+		6CF559E11A86DEC90017695B /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF559E01A86DEC90017695B /* Base32.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		6CB02DD11A760C3400868654 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6CB02DD21A760C3400868654 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6CB02DD31A760D4100868654 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		6CF559DE1A86DDD70017695B /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/Mac/Base32.framework; sourceTree = "<group>"; };
+		6CF559E01A86DEC90017695B /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/iOS/Base32.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF559DF1A86DDD70017695B /* Base32.framework in Frameworks */,
 				6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF559E11A86DEC90017695B /* Base32.framework in Frameworks */,
 				6CB02DC31A76097A00868654 /* HMAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +164,7 @@
 			children = (
 				6CB02D8E1A7605BD00868654 /* HMACTests.swift */,
 				6CB02D8C1A7605BD00868654 /* Supporting Files */,
+				6CF559E21A86DF090017695B /* Frameworks */,
 			);
 			path = HMACTests;
 			sourceTree = "<group>";
@@ -234,6 +241,16 @@
 				6CB02DB11A76092B00868654 /* Mac-StaticLibrary.xcconfig */,
 			);
 			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		6CF559E21A86DF090017695B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CF559E01A86DEC90017695B /* Base32.framework */,
+				6CF559DE1A86DDD70017695B /* Base32.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,7 +528,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -520,7 +542,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -551,7 +578,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -560,7 +592,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

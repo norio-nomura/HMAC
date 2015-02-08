@@ -1,15 +1,22 @@
 language: objective-c
 cache:
   directories:
-    - vendor/bundle
+  - vendor/bundle
+before_install:
+- curl 'https://developer.apple.com/certificationauthority/AppleWWDRCA.cer' -o certificates/AppleWWDRCA.cer
 install:
-  - bundle install --path=vendor/bundle --binstubs=vendor/bin
+- bundle install --path=vendor/bundle --binstubs=vendor/bin
+- bundle exec rake certificates:install
+- brew update
+- brew install carthage
+- carthage update
 script:
-  - bundle exec rake test:ios test:osx
+- bundle exec rake test:ios test:osx
 branches:
   only:
-    - master
+  - master
 env:
   global:
-    - LANG=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
+  - LANG=en_US.UTF-8
+  - LC_ALL=en_US.UTF-8
+  - secure: WCugOMftjTzfchpdvugl92Fr6j1UzvsX6j9u1s90GF1jjL6oXwfyabeV+yLz/MX8X/1oniT/LehT14eFWqWqOAQSpEhnmQfvl+YdyU4nJq2jCKAm0wPHS3cQjr6nSuzS/O/AZ0bLS32zwerCs5Wmf4ZyJ9tVf8fEFpfUnzb4ZVk=
