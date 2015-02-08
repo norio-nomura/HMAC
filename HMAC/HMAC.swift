@@ -34,6 +34,14 @@ public struct HMAC {
         let key = string.cStringUsingEncoding(NSUTF8StringEncoding)!
         let length = string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
         self.init(algorithm: algorithm, key: key, keyLength: length)
+        
+        // Swift crashes with following code: rdar://problem/19753599
+        /*
+        self.algorithm = algorithm
+        string.nulTerminatedUTF8.withUnsafeBufferPointer {
+            HMAC_bridge_Init(self.ctx.context, algorithm.bridgedValue, $0.baseAddress, UInt($0.count - 1))
+        }
+        */
     }
     
     public init(algorithm: Algorithm, key array: [UInt8]) {
