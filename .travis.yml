@@ -4,12 +4,13 @@ cache:
   - vendor/bundle
 before_install:
 - curl 'https://developer.apple.com/certificationauthority/AppleWWDRCA.cer' -o certificates/AppleWWDRCA.cer
+- brew update
+- brew install carthage
 install:
 - bundle install --path=vendor/bundle --binstubs=vendor/bin
 - bundle exec rake certificates:install
-- brew update
-- brew install carthage
-- carthage update
+- carthage checkout
+- carthage build --no-skip-current
 script:
 - bundle exec rake test:ios test:osx
 branches:
@@ -20,3 +21,14 @@ env:
   - LANG=en_US.UTF-8
   - LC_ALL=en_US.UTF-8
   - secure: WCugOMftjTzfchpdvugl92Fr6j1UzvsX6j9u1s90GF1jjL6oXwfyabeV+yLz/MX8X/1oniT/LehT14eFWqWqOAQSpEhnmQfvl+YdyU4nJq2jCKAm0wPHS3cQjr6nSuzS/O/AZ0bLS32zwerCs5Wmf4ZyJ9tVf8fEFpfUnzb4ZVk=
+before_deploy:
+  - cd Carthage/Build && zip -r HMAC.framework.zip */HMAC.framework
+deploy:
+  provider: releases
+  api_key:
+    secure: bXusmSy2KlA40UdlZ4OSEFwnqAY8lv/4NhY6v/MEoDAsKyUoMMGRRyFBvpsygJ6Y/Mdo20vyg8Rw3GIcmdd7MS+1TIQdhUK1rsKvTTfDb1EQycMTH6Fv1oKlruJXyUTCCSPtKqy+FomgPRDLqb0u2d60+k7NWsoUeWdFiRDbLZE=
+  file: Carthage/Build/HMAC.framework.zip
+  skip_cleanup: true
+  on:
+    repo: norio-nomura/HMAC
+    tags: true
