@@ -12,11 +12,14 @@ install:
 - carthage checkout
 - carthage build --no-skip-current
 script:
-- bundle exec rake test:ios test:osx
+- bundle exec rake test:$TEST_SUITE
 branches:
   only:
   - master
 env:
+  matrix:
+  - TEST_SUITE=ios
+  - TEST_SUITE=osx
   global:
   - LANG=en_US.UTF-8
   - LC_ALL=en_US.UTF-8
