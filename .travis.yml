@@ -4,11 +4,11 @@ cache:
   - vendor/bundle
 before_install:
 - curl 'https://developer.apple.com/certificationauthority/AppleWWDRCA.cer' -o certificates/AppleWWDRCA.cer
+- brew update
+- brew install carthage
 install:
 - bundle install --path=vendor/bundle --binstubs=vendor/bin
 - bundle exec rake certificates:install
-- brew update
-- brew install carthage
 - carthage checkout
 - carthage build --no-skip-current
 script:
