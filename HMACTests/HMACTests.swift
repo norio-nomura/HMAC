@@ -350,4 +350,49 @@ class HMACTests: XCTestCase {
             "134676fb6de0446065c97440fa8c6a58")
     }
     
+    func test_RFC4231_Hmac_TestCase7_multipartUpdates() {
+        let key = base16Decode(
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" +
+            "aaaaaa")!
+        let dataStringArray = [
+            "54686973206973206120746573742075",
+            "73696e672061206c6172676572207468",
+            "616e20626c6f636b2d73697a65206b65",
+            "7920616e642061206c61726765722074",
+            "68616e20626c6f636b2d73697a652064",
+            "6174612e20546865206b6579206e6565",
+            "647320746f2062652068617368656420",
+            "6265666f7265206265696e6720757365",
+            "642062792074686520484d414320616c",
+            "676f726974686d2e"
+            ]
+        let expects: [(HMAC.Algorithm, String)] = [
+            (.SHA224, "3a854166ac5d9f023f54d517d0b39dbd" +
+                "946770db9c2b95c9f6f565d1"),
+            (.SHA256, "9b09ffa71b942fcb27635fbcd5b0e944" +
+                "bfdc63644f0713938a7f51535c3a35e2"),
+            (.SHA384, "6617178e941f020d351e2f254e8fd32c" +
+                "602420feb0b8fb9adccebb82461e99c5" +
+                "a678cc31e799176d3860e6110c46523e"),
+            (.SHA512, "e37b6a775dc87dbaa4dfa9f96e5e3ffd" +
+                "debd71f8867289865df5a32d20cdc944" +
+                "b6022cac3c4982b10d5eeb55c3e4de15" +
+                "134676fb6de0446065c97440fa8c6a58")
+        ]
+        for (algorithm, expect) in expects {
+            let hmac = HMAC(algorithm: algorithm, key: key)
+            for dataString in dataStringArray {
+                let data = dataString.base16DecodedData!
+                hmac.update(data)
+            }
+            XCTAssertEqual(base16Encode(hmac.final(), uppercase: false), expect)
+        }
+    }
 }
