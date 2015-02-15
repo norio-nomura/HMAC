@@ -50,7 +50,7 @@
 		6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HMAC-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB02D8D1A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CB02D8E1A7605BD00868654 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
-		6CB02D981A7605EE00868654 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		6CB02D981A7605EE00868654 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		6CB02D9B1A76092B00868654 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		6CB02D9D1A76092B00868654 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		6CB02D9E1A76092B00868654 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				6CA3FB861A774A7B003010D4 /* HMAC.playground */,
 				6CB02DD21A760C3400868654 /* README.md */,
 				6CB02DD11A760C3400868654 /* LICENSE */,
-				6CB02D981A7605EE00868654 /* Cartfile */,
+				6CB02D981A7605EE00868654 /* Cartfile.private */,
 				6CB02D7E1A7605BD00868654 /* HMAC */,
 				6CB02D8B1A7605BD00868654 /* HMACTests */,
 				6CB02D991A76092B00868654 /* xcconfigs */,
