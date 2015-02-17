@@ -1,6 +1,6 @@
 # CommonCrypto HMAC wrapper for Swift on OS X and iOS
 [![MIT Lincese](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
-[![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-f2a77e.svg?style=flat)](https://github.com/Carthage/Carthage/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CI Status](http://img.shields.io/travis/norio-nomura/HMAC.svg?style=flat)](https://travis-ci.org/norio-nomura/HMAC)
 
 HMAC is a [CommonCrypto's HMAC](https://developer.apple.com/library/ios/documentation/System/Conceptual/ManPages_iPhoneOS/man3/CCHmac.3cc.html) wrapper for Swift on OS X and iOS
