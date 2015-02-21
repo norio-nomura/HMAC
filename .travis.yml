@@ -32,3 +32,6 @@ deploy:
   on:
     tags: true
   skip_cleanup: true
+notifications:
+  webhooks:
+    secure: Axm4RNRydsHiB6Ak4c9Bf+rmhvTz6WMFphjPJKHdEUl3yt3M4C3g00v5a1M3ImW+NdEWFBIAnobE/pWbq7lT6nF2A+piSBjRozQCz13hjDq1HJ8MsFo1VX1vh1gagaajjs+1bibfBQD1DrX5bI1ZPWkM1o48RBCn6yTtcQBjE78=
