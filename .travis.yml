@@ -16,14 +16,14 @@ script:
 branches:
   only:
   - master
-  - /^v\d+\.\d+\.\d+$/
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
 env:
   global:
   - LANG=en_US.UTF-8
   - LC_ALL=en_US.UTF-8
   - secure: WCugOMftjTzfchpdvugl92Fr6j1UzvsX6j9u1s90GF1jjL6oXwfyabeV+yLz/MX8X/1oniT/LehT14eFWqWqOAQSpEhnmQfvl+YdyU4nJq2jCKAm0wPHS3cQjr6nSuzS/O/AZ0bLS32zwerCs5Wmf4ZyJ9tVf8fEFpfUnzb4ZVk=
 before_deploy:
-  - carthage archive HMAC
+- carthage archive HMAC
 deploy:
   provider: releases
   api_key:
