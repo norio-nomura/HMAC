@@ -39,7 +39,7 @@ public struct HMAC {
         /*
         self.algorithm = algorithm
         string.nulTerminatedUTF8.withUnsafeBufferPointer {
-            HMAC_bridge_Init(self.ctx.context, algorithm.bridgedValue, $0.baseAddress, UInt($0.count - 1))
+            HMAC_bridge_Init(self.ctx.context, algorithm.bridgedValue, $0.baseAddress, numericCast($0.count - 1))
         }
         */
     }
@@ -56,7 +56,7 @@ public struct HMAC {
     
     private init(algorithm: Algorithm, key: UnsafePointer<Void>, keyLength: Int) {
         self.algorithm = algorithm
-        HMAC_bridge_Init(ctx.context, algorithm.bridgedValue, key, UInt(keyLength))
+        HMAC_bridge_Init(ctx.context, algorithm.bridgedValue, key, numericCast(keyLength))
     }
     
     public func update(string: String) -> HMAC {
@@ -78,7 +78,7 @@ public struct HMAC {
     }
     
     public func update(data: UnsafePointer<Void>, dataLength: Int) -> HMAC {
-        HMAC_bridge_Update(ctx.context, data, UInt(dataLength))
+        HMAC_bridge_Update(ctx.context, data, numericCast(dataLength))
         return self
     }
     
