@@ -162,7 +162,7 @@ extension HMAC.Algorithm {
     }
 }
 
-extension HMAC.Algorithm: Printable {
+extension HMAC.Algorithm: CustomStringConvertible {
     public var description: String {
         return stringValue
     }
