@@ -274,18 +274,18 @@ class HMACTests: XCTestCase {
         let data = base16Decode(
             "546573742057697468205472756e6361" +
             "74696f6e")!
-        XCTAssertEqual(
-            base16Encode(HMAC(algorithm: .SHA224, key: key).update(data).final(), uppercase: false).prefix(32),
-            "0e2aea68a90c8d37c988bcdb9fca6fa8")
-        XCTAssertEqual(
-            base16Encode(HMAC(algorithm: .SHA256, key: key).update(data).final(), uppercase: false).prefix(32),
-            "a3b6167473100ee06e0c796c2955552b")
-        XCTAssertEqual(
-            base16Encode(HMAC(algorithm: .SHA384, key: key).update(data).final(), uppercase: false).prefix(32),
-            "3abf34c3503b2a23a46efc619baef897")
-        XCTAssertEqual(
-            base16Encode(HMAC(algorithm: .SHA512, key: key).update(data).final(), uppercase: false).prefix(32),
-            "415fad6271580a531d4179bc891d87a6")
+        XCTAssertTrue(
+            base16Encode(HMAC(algorithm: .SHA224, key: key).update(data).final(), uppercase: false)
+                .hasPrefix("0e2aea68a90c8d37c988bcdb9fca6fa8"))
+        XCTAssertTrue(
+            base16Encode(HMAC(algorithm: .SHA256, key: key).update(data).final(), uppercase: false)
+                .hasPrefix("a3b6167473100ee06e0c796c2955552b"))
+        XCTAssertTrue(
+            base16Encode(HMAC(algorithm: .SHA384, key: key).update(data).final(), uppercase: false)
+                .hasPrefix("3abf34c3503b2a23a46efc619baef897"))
+        XCTAssertTrue(
+            base16Encode(HMAC(algorithm: .SHA512, key: key).update(data).final(), uppercase: false)
+                .hasPrefix("415fad6271580a531d4179bc891d87a6"))
     }
     
     func test_RFC4231_Hmac_TestCase6() {
