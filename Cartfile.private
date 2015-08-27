@@ -1,2 +1,2 @@
 github "jspahrsummers/xcconfigs" "0.8.1"
-github "norio-nomura/Base32" >= 0.3
+github "norio-nomura/Base32" "swift-2"
