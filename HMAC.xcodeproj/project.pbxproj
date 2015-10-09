@@ -11,6 +11,10 @@
 		6CA3FB3E1A771E15003010D4 /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
 		6CA3FB401A771E3F003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CA3FB411A771E41003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA5743C1BC74B9C0093F85F /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA5743D1BC74BA20093F85F /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; settings = {ASSET_TAGS = (); }; };
+		6CA5743E1BC74BA80093F85F /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA5743F1BC74BAD0093F85F /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; settings = {ASSET_TAGS = (); }; };
 		6CB02D821A7605BD00868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB02D7C1A7605BD00868654 /* HMAC.framework */; };
 		6CB02D8F1A7605BD00868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
@@ -44,6 +48,15 @@
 		6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAC_bridge.m; sourceTree = "<group>"; };
 		6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC_bridge.h; sourceTree = "<group>"; };
 		6CA3FB861A774A7B003010D4 /* HMAC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HMAC.playground; sourceTree = "<group>"; };
+		6CA5742B1BC74A740093F85F /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA574341BC74AB20093F85F /* watchOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Application.xcconfig"; sourceTree = "<group>"; };
+		6CA574351BC74AB20093F85F /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
+		6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		6CA574371BC74AB20093F85F /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		6CA574411BC74C070093F85F /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
+		6CA574421BC74C070093F85F /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
+		6CA574431BC74C070093F85F /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		6CA574441BC74C070093F85F /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		6CB02D7C1A7605BD00868654 /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CB02D801A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CB02D811A7605BD00868654 /* HMAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC.h; sourceTree = "<group>"; };
@@ -79,6 +92,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6CA574271BC74A740093F85F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB02D781A7605BD00868654 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +134,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CA574331BC74AB20093F85F /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				6CA574341BC74AB20093F85F /* watchOS-Application.xcconfig */,
+				6CA574351BC74AB20093F85F /* watchOS-Base.xcconfig */,
+				6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */,
+				6CA574371BC74AB20093F85F /* watchOS-StaticLibrary.xcconfig */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		6CA574401BC74C070093F85F /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				6CA574411BC74C070093F85F /* tvOS-Application.xcconfig */,
+				6CA574421BC74C070093F85F /* tvOS-Base.xcconfig */,
+				6CA574431BC74C070093F85F /* tvOS-Framework.xcconfig */,
+				6CA574441BC74C070093F85F /* tvOS-StaticLibrary.xcconfig */,
+			);
+			name = tvOS;
+			path = Carthage/Checkouts/xcconfigs/tvOS;
+			sourceTree = SOURCE_ROOT;
+		};
 		6CB02D721A7605BD00868654 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +178,7 @@
 				6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */,
 				6CB02DB81A76097A00868654 /* HMAC.framework */,
 				6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */,
+				6CA5742B1BC74A740093F85F /* HMAC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +227,8 @@
 				6CB02D9A1A76092B00868654 /* Base */,
 				6CB02DA71A76092B00868654 /* iOS */,
 				6CB02DAC1A76092B00868654 /* Mac OS X */,
+				6CA574401BC74C070093F85F /* tvOS */,
+				6CA574331BC74AB20093F85F /* watchOS */,
 				6CB02DB21A76092B00868654 /* README.md */,
 			);
 			name = xcconfigs;
@@ -256,6 +302,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		6CA574281BC74A740093F85F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA5743E1BC74BA80093F85F /* HMAC_bridge.h in Headers */,
+				6CA5743C1BC74B9C0093F85F /* HMAC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB02D791A7605BD00868654 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +332,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		6CA5742A1BC74A740093F85F /* HMAC-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA574321BC74A740093F85F /* Build configuration list for PBXNativeTarget "HMAC-watchOS" */;
+			buildPhases = (
+				6CA574261BC74A740093F85F /* Sources */,
+				6CA574271BC74A740093F85F /* Frameworks */,
+				6CA574281BC74A740093F85F /* Headers */,
+				6CA574291BC74A740093F85F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HMAC-watchOS";
+			productName = HMAC;
+			productReference = 6CA5742B1BC74A740093F85F /* HMAC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6CB02D7B1A7605BD00868654 /* HMAC-Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CB02D921A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-Mac" */;
@@ -360,6 +433,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Norio Nomura";
 				TargetAttributes = {
+					6CA5742A1BC74A740093F85F = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
 					6CB02D7B1A7605BD00868654 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -390,11 +466,19 @@
 				6CB02D861A7605BD00868654 /* HMAC-MacTests */,
 				6CB02DB71A76097A00868654 /* HMAC-iOS */,
 				6CB02DC11A76097A00868654 /* HMAC-iOSTests */,
+				6CA5742A1BC74A740093F85F /* HMAC-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6CA574291BC74A740093F85F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB02D7A1A7605BD00868654 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,6 +510,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6CA574261BC74A740093F85F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA5743D1BC74BA20093F85F /* HMAC.swift in Sources */,
+				6CA5743F1BC74BAD0093F85F /* HMAC_bridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6CB02D771A7605BD00868654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +569,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6CA574301BC74A740093F85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = HMAC/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6CA574311BC74A740093F85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = HMAC/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		6CB02D901A7605BD00868654 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02D9D1A76092B00868654 /* Debug.xcconfig */;
@@ -615,6 +734,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6CA574321BC74A740093F85F /* Build configuration list for PBXNativeTarget "HMAC-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA574301BC74A740093F85F /* Debug */,
+				6CA574311BC74A740093F85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6CB02D761A7605BD00868654 /* Build configuration list for PBXProject "HMAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

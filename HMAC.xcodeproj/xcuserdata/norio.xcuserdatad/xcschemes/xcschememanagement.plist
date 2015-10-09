@@ -7,16 +7,26 @@
 		<key>HMAC-Mac.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>HMAC-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
+		</dict>
+		<key>HMAC-watchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6CA5742A1BC74A740093F85F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6CB02D7B1A7605BD00868654</key>
 		<dict>
 			<key>primary</key>
