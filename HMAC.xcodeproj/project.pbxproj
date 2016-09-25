@@ -12,9 +12,9 @@
 		6CA3FB401A771E3F003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CA3FB411A771E41003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CA5743C1BC74B9C0093F85F /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA5743D1BC74BA20093F85F /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; settings = {ASSET_TAGS = (); }; };
+		6CA5743D1BC74BA20093F85F /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
 		6CA5743E1BC74BA80093F85F /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA5743F1BC74BAD0093F85F /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; settings = {ASSET_TAGS = (); }; };
+		6CA5743F1BC74BAD0093F85F /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
 		6CB02D821A7605BD00868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB02D7C1A7605BD00868654 /* HMAC.framework */; };
 		6CB02D8F1A7605BD00868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
@@ -435,18 +435,23 @@
 				TargetAttributes = {
 					6CA5742A1BC74A740093F85F = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0800;
 					};
 					6CB02D7B1A7605BD00868654 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					6CB02D861A7605BD00868654 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					6CB02DB71A76097A00868654 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 					6CB02DC11A76097A00868654 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -577,6 +582,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -590,6 +596,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -635,6 +642,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -646,6 +654,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -661,6 +670,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -676,6 +686,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -687,6 +698,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -698,6 +710,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -713,6 +726,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -728,6 +742,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -741,6 +756,7 @@
 				6CA574311BC74A740093F85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CB02D761A7605BD00868654 /* Build configuration list for PBXProject "HMAC" */ = {
 			isa = XCConfigurationList;
