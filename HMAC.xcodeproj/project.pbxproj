@@ -23,8 +23,6 @@
 		6CB02DD51A760D4100868654 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
 		6CB02DD61A760D8100868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
 		6CB02DDA1A7610B000868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CF559DF1A86DDD70017695B /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF559DE1A86DDD70017695B /* Base32.framework */; };
-		6CF559E11A86DEC90017695B /* Base32.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF559E01A86DEC90017695B /* Base32.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +39,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6CB02DB71A76097A00868654;
 			remoteInfo = HMAC;
+		};
+		6CF9184C1D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CA0A7981A74E80600AC539F;
+			remoteInfo = "Base32-Mac";
+		};
+		6CF9184E1D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CA0A7A31A74E80600AC539F;
+			remoteInfo = "Base32-MacTests";
+		};
+		6CF918501D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CA0A7D31A74E91700AC539F;
+			remoteInfo = "Base32-iOS";
+		};
+		6CF918521D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CA0A7DD1A74E91800AC539F;
+			remoteInfo = "Base32-iOSTests";
+		};
+		6CF918541D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CCCF1EB1BC20835003CE287;
+			remoteInfo = "Base32-watchOS";
+		};
+		6CF918561D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6CA0A8071A75135D00AC539F;
+			remoteInfo = SecEncodeTransformTests;
+		};
+		6CF918581D989612007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA0A7971A74E80600AC539F;
+			remoteInfo = "Base32-Mac";
+		};
+		6CF9185A1D989619007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA0A7D21A74E91700AC539F;
+			remoteInfo = "Base32-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,8 +141,7 @@
 		6CB02DD11A760C3400868654 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6CB02DD21A760C3400868654 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6CB02DD31A760D4100868654 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		6CF559DE1A86DDD70017695B /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/Mac/Base32.framework; sourceTree = "<group>"; };
-		6CF559E01A86DEC90017695B /* Base32.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base32.framework; path = Carthage/Build/iOS/Base32.framework; sourceTree = "<group>"; };
+		6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Base32.xcodeproj; path = Carthage/Checkouts/Base32/Base32.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +163,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CF559DF1A86DDD70017695B /* Base32.framework in Frameworks */,
 				6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CF559E11A86DEC90017695B /* Base32.framework in Frameworks */,
 				6CB02DC31A76097A00868654 /* HMAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +211,7 @@
 		6CB02D721A7605BD00868654 = {
 			isa = PBXGroup;
 			children = (
+				6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */,
 				6CA3FB861A774A7B003010D4 /* HMAC.playground */,
 				6CB02DD21A760C3400868654 /* README.md */,
 				6CB02DD11A760C3400868654 /* LICENSE */,
@@ -208,7 +260,6 @@
 			children = (
 				6CB02D8E1A7605BD00868654 /* HMACTests.swift */,
 				6CB02D8C1A7605BD00868654 /* Supporting Files */,
-				6CF559E21A86DF090017695B /* Frameworks */,
 			);
 			path = HMACTests;
 			sourceTree = "<group>";
@@ -289,14 +340,17 @@
 			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
-		6CF559E21A86DF090017695B /* Frameworks */ = {
+		6CF918441D9895BB007DC1C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CF559E01A86DEC90017695B /* Base32.framework */,
-				6CF559DE1A86DDD70017695B /* Base32.framework */,
+				6CF9184D1D9895BB007DC1C1 /* Base32.framework */,
+				6CF9184F1D9895BB007DC1C1 /* Base32-MacTests.xctest */,
+				6CF918511D9895BB007DC1C1 /* Base32.framework */,
+				6CF918531D9895BB007DC1C1 /* Base32-iOSTests.xctest */,
+				6CF918551D9895BB007DC1C1 /* Base32.framework */,
+				6CF918571D9895BB007DC1C1 /* SecEncodeTransformTests.xctest */,
 			);
-			name = Frameworks;
-			path = ..;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +433,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6CF918591D989612007DC1C1 /* PBXTargetDependency */,
 				6CB02D8A1A7605BD00868654 /* PBXTargetDependency */,
 			);
 			name = "HMAC-MacTests";
@@ -415,6 +470,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6CF9185B1D989619007DC1C1 /* PBXTargetDependency */,
 				6CB02DC51A76097A00868654 /* PBXTargetDependency */,
 			);
 			name = "HMAC-iOSTests";
@@ -465,6 +521,12 @@
 			mainGroup = 6CB02D721A7605BD00868654;
 			productRefGroup = 6CB02D7D1A7605BD00868654 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6CF918441D9895BB007DC1C1 /* Products */;
+					ProjectRef = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6CB02D7B1A7605BD00868654 /* HMAC-Mac */,
@@ -475,6 +537,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6CF9184D1D9895BB007DC1C1 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 6CF9184C1D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF9184F1D9895BB007DC1C1 /* Base32-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Base32-MacTests.xctest";
+			remoteRef = 6CF9184E1D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF918511D9895BB007DC1C1 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 6CF918501D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF918531D9895BB007DC1C1 /* Base32-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Base32-iOSTests.xctest";
+			remoteRef = 6CF918521D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF918551D9895BB007DC1C1 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 6CF918541D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF918571D9895BB007DC1C1 /* SecEncodeTransformTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SecEncodeTransformTests.xctest;
+			remoteRef = 6CF918561D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6CA574291BC74A740093F85F /* Resources */ = {
@@ -571,6 +678,16 @@
 			target = 6CB02DB71A76097A00868654 /* HMAC-iOS */;
 			targetProxy = 6CB02DC41A76097A00868654 /* PBXContainerItemProxy */;
 		};
+		6CF918591D989612007DC1C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Base32-Mac";
+			targetProxy = 6CF918581D989612007DC1C1 /* PBXContainerItemProxy */;
+		};
+		6CF9185B1D989619007DC1C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Base32-iOS";
+			targetProxy = 6CF9185A1D989619007DC1C1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -662,10 +779,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
@@ -678,10 +791,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
@@ -718,10 +827,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
@@ -734,10 +839,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = HMACTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
