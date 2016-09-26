@@ -30,13 +30,13 @@ import Foundation
 
 public struct HMAC {
     public enum Algorithm: CUnsignedInt {
-        case SHA1, MD5, SHA256, SHA384, SHA512, SHA224
+        case sha1, md5, sha256, sha384, sha512, sha224
     }
 
     typealias Context = UnsafeMutablePointer<HMAC_bridge_Context>
     class CTX {
-        var context = Context.alloc(1)
-        deinit { context.dealloc(1) }
+        var context = Context.allocate(capacity: 1)
+        deinit { context.deallocate(capacity: 1) }
     }
     
     let ctx = CTX()
@@ -49,8 +49,8 @@ public struct HMAC {
         // But I can't find this behavior in Apple's document.
         // So I use following forece unwrap style
         
-        let key = string.cStringUsingEncoding(NSUTF8StringEncoding)!
-        let length = string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+        let key = string.cString(using: .utf8)!
+        let length = string.lengthOfBytes(using: .utf8)
         self.init(algorithm: algorithm, key: key, keyLength: length)
         
         // Swift crashes with following code: rdar://problem/19753599
@@ -67,41 +67,42 @@ public struct HMAC {
         self.init(algorithm: algorithm, key: array, keyLength: array.count)
     }
     
-    public init(algorithm: Algorithm, key data: NSData) {
-        assert(data.length > 0, "key: Data.length must be greater than zero.")
-        self.init(algorithm: algorithm, key: data.bytes, keyLength: data.length)
+    public init(algorithm: Algorithm, key data: Data) {
+        assert(data.count > 0, "key: Data.length must be greater than zero.")
+        self.init(algorithm: algorithm, key: (data as NSData).bytes, keyLength: data.count)
     }
     
-    private init(algorithm: Algorithm, key: UnsafePointer<Void>, keyLength: Int) {
+    fileprivate init(algorithm: Algorithm, key: UnsafeRawPointer, keyLength: Int) {
         self.algorithm = algorithm
         HMAC_bridge_Init(ctx.context, algorithm.bridgedValue, key, numericCast(keyLength))
     }
     
-    public func update(string: String) -> HMAC {
-        return string.nulTerminatedUTF8.withUnsafeBufferPointer {
-            return self.update($0.baseAddress, dataLength: $0.count - 1)
+    public func update(_ string: String) -> HMAC {
+        return string.utf8CString.withUnsafeBufferPointer {
+            return self.update($0.baseAddress!, dataLength: $0.count - 1)
         }
     }
     
-    public func update(array: [UInt8]) -> HMAC {
+    public func update(_ array: [UInt8]) -> HMAC {
         return update(array, dataLength: array.count)
     }
     
-    public func update(data: NSData) -> HMAC {
-        return update(data.bytes, dataLength: data.length)
+    public func update(_ data: Data) -> HMAC {
+        return update((data as NSData).bytes, dataLength: data.count)
     }
     
-    public func update(var i: UInt64) -> HMAC {
-        return update(&i, dataLength: sizeof(UInt64))
+    public func update(_ i: UInt64) -> HMAC {
+        var i = i
+        return update(&i, dataLength: MemoryLayout<UInt64>.size)
     }
     
-    public func update(data: UnsafePointer<Void>, dataLength: Int) -> HMAC {
+    public func update(_ data: UnsafeRawPointer, dataLength: Int) -> HMAC {
         HMAC_bridge_Update(ctx.context, data, numericCast(dataLength))
         return self
     }
     
     public func final() -> [UInt8] {
-        var hmac = Array<UInt8>(count: algorithm.digestLength, repeatedValue:0)
+        var hmac = Array<UInt8>(repeating: 0, count: algorithm.digestLength)
         HMAC_bridge_Final(ctx.context, &hmac)
         return hmac
     }
@@ -117,47 +118,47 @@ extension HMAC.Algorithm {
     }
     
     public init?(_ string: String) {
-        switch string.uppercaseString {
-        case "SHA1": self = .SHA1
-        case "MD5": self = .MD5
-        case "SHA256": self = .SHA256
-        case "SHA384": self = .SHA384
-        case "SHA512": self = .SHA512
-        case "SHA224": self = .SHA224
+        switch string.uppercased() {
+        case "SHA1": self = .sha1
+        case "MD5": self = .md5
+        case "SHA256": self = .sha256
+        case "SHA384": self = .sha384
+        case "SHA512": self = .sha512
+        case "SHA224": self = .sha224
         default: return nil
         }
     }
     
     public var stringValue: String {
         switch self {
-        case .SHA1: return "SHA1"
-        case .MD5: return "MD5"
-        case .SHA256: return "SHA256"
-        case .SHA384: return "SHA384"
-        case .SHA512: return "SHA512"
-        case .SHA224: return "SHA224"
+        case .sha1: return "SHA1"
+        case .md5: return "MD5"
+        case .sha256: return "SHA256"
+        case .sha384: return "SHA384"
+        case .sha512: return "SHA512"
+        case .sha224: return "SHA224"
         }
     }
     
     var digestLength: Int {
         switch self {
-        case .SHA1: return Int(HMAC_bridge_SHA1_DIGEST_LENGTH)
-        case .MD5: return Int(HMAC_bridge_MD5_DIGEST_LENGTH)
-        case .SHA256: return Int(HMAC_bridge_SHA256_DIGEST_LENGTH)
-        case .SHA384: return Int(HMAC_bridge_SHA384_DIGEST_LENGTH)
-        case .SHA512: return Int(HMAC_bridge_SHA512_DIGEST_LENGTH)
-        case .SHA224: return Int(HMAC_bridge_SHA224_DIGEST_LENGTH)
+        case .sha1: return Int(HMAC_bridge_SHA1_DIGEST_LENGTH)
+        case .md5: return Int(HMAC_bridge_MD5_DIGEST_LENGTH)
+        case .sha256: return Int(HMAC_bridge_SHA256_DIGEST_LENGTH)
+        case .sha384: return Int(HMAC_bridge_SHA384_DIGEST_LENGTH)
+        case .sha512: return Int(HMAC_bridge_SHA512_DIGEST_LENGTH)
+        case .sha224: return Int(HMAC_bridge_SHA224_DIGEST_LENGTH)
         }
     }
     
     var bridgedValue: HMAC_bridge_Algorithm {
         switch self {
-        case .SHA1: return .SHA1
-        case .MD5: return .MD5
-        case .SHA256: return .SHA256
-        case .SHA384: return .SHA384
-        case .SHA512: return .SHA512
-        case .SHA224: return .SHA224
+        case .sha1: return .SHA1
+        case .md5: return .MD5
+        case .sha256: return .SHA256
+        case .sha384: return .SHA384
+        case .sha512: return .SHA512
+        case .sha224: return .SHA224
         }
     }
 }
@@ -165,5 +166,32 @@ extension HMAC.Algorithm {
 extension HMAC.Algorithm: CustomStringConvertible {
     public var description: String {
         return stringValue
+    }
+}
+
+extension HMAC.Algorithm {
+    @available(*, unavailable, renamed: "sha1")
+    static var SHA1: HMAC.Algorithm {
+        return .sha1
+    }
+    @available(*, unavailable, renamed: "md5")
+    static var MD5: HMAC.Algorithm {
+        return .md5
+    }
+    @available(*, unavailable, renamed: "sha256")
+    static var SHA256: HMAC.Algorithm {
+        return .sha256
+    }
+    @available(*, unavailable, renamed: "sha384")
+    static var SHA384: HMAC.Algorithm {
+        return .sha384
+    }
+    @available(*, unavailable, renamed: "sha512")
+    static var SHA512: HMAC.Algorithm {
+        return .sha512
+    }
+    @available(*, unavailable, renamed: "sha224")
+    static var SHA224: HMAC.Algorithm {
+        return .sha224
     }
 }

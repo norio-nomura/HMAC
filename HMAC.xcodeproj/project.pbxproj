@@ -26,55 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6CB02D891A7605BD00868654 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CB02D731A7605BD00868654 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CB02D7B1A7605BD00868654;
-			remoteInfo = HMAC;
-		};
-		6CB02DC41A76097A00868654 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CB02D731A7605BD00868654 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CB02DB71A76097A00868654;
-			remoteInfo = HMAC;
-		};
-		6CF9184C1D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7981A74E80600AC539F;
-			remoteInfo = "Base32-Mac";
-		};
-		6CF9184E1D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7A31A74E80600AC539F;
-			remoteInfo = "Base32-MacTests";
-		};
-		6CF918501D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7D31A74E91700AC539F;
-			remoteInfo = "Base32-iOS";
-		};
-		6CF918521D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7DD1A74E91800AC539F;
-			remoteInfo = "Base32-iOSTests";
-		};
-		6CF918541D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CCCF1EB1BC20835003CE287;
-			remoteInfo = "Base32-watchOS";
-		};
 		6CF918561D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
@@ -82,19 +33,33 @@
 			remoteGlobalIDString = 6CA0A8071A75135D00AC539F;
 			remoteInfo = SecEncodeTransformTests;
 		};
-		6CF918581D989612007DC1C1 /* PBXContainerItemProxy */ = {
+		6CF918631D989D8F007DC1C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CA0A7971A74E80600AC539F;
-			remoteInfo = "Base32-Mac";
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_Base32";
+			remoteInfo = Base32;
 		};
-		6CF9185A1D989619007DC1C1 /* PBXContainerItemProxy */ = {
+		6CF918651D989D8F007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_Base32Tests";
+			remoteInfo = Base32Tests;
+		};
+		6CF918671D989D99007DC1C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 6CA0A7D21A74E91700AC539F;
-			remoteInfo = "Base32-iOS";
+			remoteGlobalIDString = "______Target_Base32";
+			remoteInfo = Base32;
+		};
+		6CF918691D989D9E007DC1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Base32";
+			remoteInfo = Base32;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -343,11 +308,8 @@
 		6CF918441D9895BB007DC1C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CF9184D1D9895BB007DC1C1 /* Base32.framework */,
-				6CF9184F1D9895BB007DC1C1 /* Base32-MacTests.xctest */,
-				6CF918511D9895BB007DC1C1 /* Base32.framework */,
-				6CF918531D9895BB007DC1C1 /* Base32-iOSTests.xctest */,
-				6CF918551D9895BB007DC1C1 /* Base32.framework */,
+				6CF918641D989D8F007DC1C1 /* Base32.framework */,
+				6CF918661D989D8F007DC1C1 /* Base32Tests.xctest */,
 				6CF918571D9895BB007DC1C1 /* SecEncodeTransformTests.xctest */,
 			);
 			name = Products;
@@ -433,8 +395,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6CF918591D989612007DC1C1 /* PBXTargetDependency */,
-				6CB02D8A1A7605BD00868654 /* PBXTargetDependency */,
+				6CF918681D989D99007DC1C1 /* PBXTargetDependency */,
 			);
 			name = "HMAC-MacTests";
 			productName = HMACTests;
@@ -470,8 +431,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				6CF9185B1D989619007DC1C1 /* PBXTargetDependency */,
-				6CB02DC51A76097A00868654 /* PBXTargetDependency */,
+				6CF9186A1D989D9E007DC1C1 /* PBXTargetDependency */,
 			);
 			name = "HMAC-iOSTests";
 			productName = HMACTests;
@@ -539,46 +499,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6CF9184D1D9895BB007DC1C1 /* Base32.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Base32.framework;
-			remoteRef = 6CF9184C1D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF9184F1D9895BB007DC1C1 /* Base32-MacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Base32-MacTests.xctest";
-			remoteRef = 6CF9184E1D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF918511D9895BB007DC1C1 /* Base32.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Base32.framework;
-			remoteRef = 6CF918501D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF918531D9895BB007DC1C1 /* Base32-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Base32-iOSTests.xctest";
-			remoteRef = 6CF918521D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF918551D9895BB007DC1C1 /* Base32.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Base32.framework;
-			remoteRef = 6CF918541D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		6CF918571D9895BB007DC1C1 /* SecEncodeTransformTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SecEncodeTransformTests.xctest;
 			remoteRef = 6CF918561D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF918641D989D8F007DC1C1 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 6CF918631D989D8F007DC1C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CF918661D989D8F007DC1C1 /* Base32Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = Base32Tests.xctest;
+			remoteRef = 6CF918651D989D8F007DC1C1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -668,25 +607,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6CB02D8A1A7605BD00868654 /* PBXTargetDependency */ = {
+		6CF918681D989D99007DC1C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CB02D7B1A7605BD00868654 /* HMAC-Mac */;
-			targetProxy = 6CB02D891A7605BD00868654 /* PBXContainerItemProxy */;
+			name = Base32;
+			targetProxy = 6CF918671D989D99007DC1C1 /* PBXContainerItemProxy */;
 		};
-		6CB02DC51A76097A00868654 /* PBXTargetDependency */ = {
+		6CF9186A1D989D9E007DC1C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CB02DB71A76097A00868654 /* HMAC-iOS */;
-			targetProxy = 6CB02DC41A76097A00868654 /* PBXContainerItemProxy */;
-		};
-		6CF918591D989612007DC1C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Base32-Mac";
-			targetProxy = 6CF918581D989612007DC1C1 /* PBXContainerItemProxy */;
-		};
-		6CF9185B1D989619007DC1C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Base32-iOS";
-			targetProxy = 6CF9185A1D989619007DC1C1 /* PBXContainerItemProxy */;
+			name = Base32;
+			targetProxy = 6CF918691D989D9E007DC1C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -728,7 +657,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -744,7 +673,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -759,7 +688,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -771,7 +700,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = HMAC/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -783,7 +712,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -795,7 +724,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
