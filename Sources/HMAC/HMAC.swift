@@ -25,6 +25,7 @@
 //  THE SOFTWARE.
 
 import Foundation
+import BridgeToHMAC
 
 // https://tools.ietf.org/html/rfc2202
 
@@ -38,21 +39,21 @@ public struct HMAC {
         var context = Context.allocate(capacity: 1)
         deinit { context.deallocate(capacity: 1) }
     }
-    
+
     let ctx = CTX()
     let algorithm: Algorithm
-    
+
     public init(algorithm: Algorithm, key string: String) {
         assert(!string.isEmpty, "key: String must not be empty.")
-        
+
         // Passing String to UnsafePointer<Void> prameter is treated as UTF8 string ([UInt8]).
         // But I can't find this behavior in Apple's document.
         // So I use following forece unwrap style
-        
+
         let key = string.cString(using: .utf8)!
         let length = string.lengthOfBytes(using: .utf8)
         self.init(algorithm: algorithm, key: key, keyLength: length)
-        
+
         // Swift crashes with following code: rdar://problem/19753599
         /*
         self.algorithm = algorithm
@@ -61,46 +62,46 @@ public struct HMAC {
         }
         */
     }
-    
+
     public init(algorithm: Algorithm, key array: [UInt8]) {
         assert(array.count > 0, "key: Array.count must be greater than zero.")
         self.init(algorithm: algorithm, key: array, keyLength: array.count)
     }
-    
+
     public init(algorithm: Algorithm, key data: Data) {
         assert(data.count > 0, "key: Data.length must be greater than zero.")
         self.init(algorithm: algorithm, key: (data as NSData).bytes, keyLength: data.count)
     }
-    
+
     fileprivate init(algorithm: Algorithm, key: UnsafeRawPointer, keyLength: Int) {
         self.algorithm = algorithm
         HMAC_bridge_Init(ctx.context, algorithm.bridgedValue, key, numericCast(keyLength))
     }
-    
+
     public func update(_ string: String) -> HMAC {
         return string.utf8CString.withUnsafeBufferPointer {
             return self.update($0.baseAddress!, dataLength: $0.count - 1)
         }
     }
-    
+
     public func update(_ array: [UInt8]) -> HMAC {
         return update(array, dataLength: array.count)
     }
-    
+
     public func update(_ data: Data) -> HMAC {
         return update((data as NSData).bytes, dataLength: data.count)
     }
-    
+
     public func update(_ i: UInt64) -> HMAC {
         var i = i
         return update(&i, dataLength: MemoryLayout<UInt64>.size)
     }
-    
+
     public func update(_ data: UnsafeRawPointer, dataLength: Int) -> HMAC {
         HMAC_bridge_Update(ctx.context, data, numericCast(dataLength))
         return self
     }
-    
+
     public func final() -> [UInt8] {
         var hmac = Array<UInt8>(repeating: 0, count: algorithm.digestLength)
         HMAC_bridge_Final(ctx.context, &hmac)
@@ -116,7 +117,7 @@ extension HMAC.Algorithm {
             return nil
         }
     }
-    
+
     public init?(_ string: String) {
         switch string.uppercased() {
         case "SHA1": self = .sha1
@@ -128,7 +129,7 @@ extension HMAC.Algorithm {
         default: return nil
         }
     }
-    
+
     public var stringValue: String {
         switch self {
         case .sha1: return "SHA1"
@@ -139,7 +140,7 @@ extension HMAC.Algorithm {
         case .sha224: return "SHA224"
         }
     }
-    
+
     var digestLength: Int {
         switch self {
         case .sha1: return Int(HMAC_bridge_SHA1_DIGEST_LENGTH)
@@ -150,7 +151,7 @@ extension HMAC.Algorithm {
         case .sha224: return Int(HMAC_bridge_SHA224_DIGEST_LENGTH)
         }
     }
-    
+
     var bridgedValue: HMAC_bridge_Algorithm {
         switch self {
         case .sha1: return .SHA1

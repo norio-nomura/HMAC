@@ -1,8 +1,8 @@
 //
-//  HMAC.h
+//  HMAC_bridge.m
 //  HMAC
 //
-//  Created by 野村 憲男 on 1/26/15.
+//  Created by 野村 憲男 on 1/27/15.
 //
 //  Copyright (c) 2015 Norio Nomura
 //
@@ -25,12 +25,32 @@
 //  THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import "HMAC_bridge.h"
+#import <CommonCrypto/CommonCrypto.h>
+#import "include/BridgeToHMAC.h"
 
-//! Project version number for HMAC.
-FOUNDATION_EXPORT double HMACVersionNumber;
+void HMAC_bridge_Init(
+    HMAC_bridge_Context *ctx,
+    HMAC_bridge_Algorithm algorithm,
+    const void *key,
+    size_t keyLength)
+__OSX_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_2_0)
+{
+    CCHmacInit((CCHmacContext*)ctx, algorithm, key, keyLength);
+}
 
-//! Project version string for HMAC.
-FOUNDATION_EXPORT const unsigned char HMACVersionString[];
+void HMAC_bridge_Update(
+    HMAC_bridge_Context *ctx,
+    const void *data,
+    size_t dataLength)
+__OSX_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_2_0)
+{
+    CCHmacUpdate((CCHmacContext*)ctx, data, dataLength);
+}
 
-// In this header, you should import all the public headers of your framework using statements like #import <HMAC/PublicHeader.h>
+void HMAC_bridge_Final(
+    HMAC_bridge_Context *ctx,
+    void *macOut)
+__OSX_AVAILABLE_STARTING(__MAC_10_4, __IPHONE_2_0)
+{
+    CCHmacFinal((CCHmacContext*)ctx, macOut);
+}

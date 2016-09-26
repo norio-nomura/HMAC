@@ -24,6 +24,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+#import <Foundation/Foundation.h>
+
 #ifndef HMAC_HMAC_bridge_h
 #define HMAC_HMAC_bridge_h
 

@@ -1,0 +1,5 @@
+module BridgeToHMAC {
+    header "BridgeToHMAC.h"
+    link "BridgeToHMAC"
+    export *
+}
