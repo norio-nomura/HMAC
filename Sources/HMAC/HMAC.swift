@@ -25,7 +25,9 @@
 //  THE SOFTWARE.
 
 import Foundation
+#if SWIFT_PACKAGE
 import BridgeToHMAC
+#endif
 
 // https://tools.ietf.org/html/rfc2202
 

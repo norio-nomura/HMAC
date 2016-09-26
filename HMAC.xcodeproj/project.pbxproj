@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3653641D98B7B000167EED /* BridgeToHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */; };
+		_LinkFileRef_HMAC_via_HMACTests /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
+		__src_cc_ref_Sources/HMAC/HMAC.swift /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/HMAC/HMAC.swift /* HMAC.swift */; };
+		__src_cc_ref_Tests/HMACTests/HMACTests.swift /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/HMACTests/HMACTests.swift /* HMACTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C3E51351D98B5B000C5A5F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_HMAC";
+			remoteInfo = HMAC;
+		};
+		6CDCD8661D98B7FC00A65866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_Base32";
+			remoteInfo = Base32;
+		};
+		6CDCD8681D98B7FC00A65866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_Base32Tests";
+			remoteInfo = Base32Tests;
+		};
+		6CDCD86A1D98B7FC00A65866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_SecEncodeTransformTests";
+			remoteInfo = SecEncodeTransformTests;
+		};
+		6CDCD86C1D98B8E100A65866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Base32";
+			remoteInfo = Base32;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C3E51371D98B6AB00C5A5F6 /* BridgeToHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeToHMAC.h; sourceTree = "<group>"; };
+		6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Base32.xcodeproj; path = Carthage/Checkouts/Base32/Base32.xcodeproj; sourceTree = "<group>"; };
+		__PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HMAC.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeToHMAC.m; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/HMAC/HMAC.swift /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/HMACTests/HMACTests.swift /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
+		"_____Product_HMAC" /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_HMACTests" /* HMACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HMACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_HMAC" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_HMACTests" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_HMAC_via_HMACTests /* HMAC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C3E51361D98B6AB00C5A5F6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6C3E51371D98B6AB00C5A5F6 /* BridgeToHMAC.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6CDCD8611D98B7FC00A65866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CDCD8671D98B7FC00A65866 /* Base32.framework */,
+				6CDCD8691D98B7FC00A65866 /* Base32Tests.xctest */,
+				6CDCD86B1D98B7FC00A65866 /* SecEncodeTransformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_HMACTests" /* HMACTests.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */,
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_HMAC" /* HMAC.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_BridgeToHMAC" /* BridgeToHMAC */,
+				"_______Group_HMAC" /* HMAC */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_BridgeToHMAC" /* BridgeToHMAC */ = {
+			isa = PBXGroup;
+			children = (
+				6C3E51361D98B6AB00C5A5F6 /* include */,
+				__PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */,
+			);
+			name = BridgeToHMAC;
+			path = Sources/BridgeToHMAC;
+			sourceTree = "<group>";
+		};
+		"_______Group_HMAC" /* HMAC */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/HMAC/HMAC.swift /* HMAC.swift */,
+			);
+			name = HMAC;
+			path = Sources/HMAC;
+			sourceTree = "<group>";
+		};
+		"_______Group_HMACTests" /* HMACTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/HMACTests/HMACTests.swift /* HMACTests.swift */,
+			);
+			name = HMACTests;
+			path = Tests/HMACTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_HMACTests" /* HMACTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_HMAC" /* HMAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_HMAC" /* Build configuration list for PBXNativeTarget "HMAC" */;
+			buildPhases = (
+				CompilePhase_HMAC /* Sources */,
+				"___LinkPhase_HMAC" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMAC;
+			productName = HMAC;
+			productReference = "_____Product_HMAC" /* HMAC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_HMACTests" /* HMACTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_HMACTests" /* Build configuration list for PBXNativeTarget "HMACTests" */;
+			buildPhases = (
+				CompilePhase_HMACTests /* Sources */,
+				"___LinkPhase_HMACTests" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CDCD86D1D98B8E100A65866 /* PBXTargetDependency */,
+				__Dependency_HMAC /* PBXTargetDependency */,
+			);
+			name = HMACTests;
+			productName = HMACTests;
+			productReference = "_____Product_HMACTests" /* HMACTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "HMAC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6CDCD8611D98B7FC00A65866 /* Products */;
+					ProjectRef = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				"______Target_HMAC" /* HMAC */,
+				"______Target_HMACTests" /* HMACTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6CDCD8671D98B7FC00A65866 /* Base32.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Base32.framework;
+			remoteRef = 6CDCD8661D98B7FC00A65866 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CDCD8691D98B7FC00A65866 /* Base32Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = Base32Tests.xctest;
+			remoteRef = 6CDCD8681D98B7FC00A65866 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6CDCD86B1D98B7FC00A65866 /* SecEncodeTransformTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = SecEncodeTransformTests.xctest;
+			remoteRef = 6CDCD86A1D98B7FC00A65866 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_HMAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				6C3653641D98B7B000167EED /* BridgeToHMAC.m in Sources */,
+				__src_cc_ref_Sources/HMAC/HMAC.swift /* HMAC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_HMACTests /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/HMACTests/HMACTests.swift /* HMACTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CDCD86D1D98B8E100A65866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Base32;
+			targetProxy = 6CDCD86C1D98B8E100A65866 /* PBXContainerItemProxy */;
+		};
+		__Dependency_HMAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_HMAC" /* HMAC */;
+			targetProxy = 6C3E51351D98B5B000C5A5F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_HMAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMAC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HMAC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/BridgeToHMAC/include/BridgeToHMAC.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_HMACTests /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMACTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		"___DebugConf_HMAC" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMAC_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HMAC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/BridgeToHMAC/include/BridgeToHMAC.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_HMACTests" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMACTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "HMAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_HMAC" /* Build configuration list for PBXNativeTarget "HMAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_HMAC" /* Debug */,
+				_ReleaseConf_HMAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_HMACTests" /* Build configuration list for PBXNativeTarget "HMACTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_HMACTests" /* Debug */,
+				_ReleaseConf_HMACTests /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}
