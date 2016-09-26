@@ -8,7 +8,9 @@ HMAC is a [CommonCrypto's HMAC](https://developer.apple.com/library/ios/document
 ## Requirements
 
 * iOS 8 or later
-* OS X 10.9 or later
+* macOS 10.9 or later
+* tvOS 9 or later
+* watchOS 2 or later
 
 ## Installation
 

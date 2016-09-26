@@ -55,6 +55,8 @@
 		6C3E51371D98B6AB00C5A5F6 /* BridgeToHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeToHMAC.h; sourceTree = "<group>"; };
 		6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Base32.xcodeproj; path = Carthage/Checkouts/Base32/Base32.xcodeproj; sourceTree = "<group>"; };
 		6CDCD86E1D98BDA000A65866 /* HMAC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HMAC.playground; sourceTree = "<group>"; };
+		6CDCD86F1D98BE3000A65866 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CDCD8701D98BE3000A65866 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		__PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HMAC.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeToHMAC.m; sourceTree = "<group>"; };
@@ -112,6 +114,8 @@
 		"___RootGroup_" = {
 			isa = PBXGroup;
 			children = (
+				6CDCD86F1D98BE3000A65866 /* README.md */,
+				6CDCD8701D98BE3000A65866 /* LICENSE */,
 				6CDCD86E1D98BDA000A65866 /* HMAC.playground */,
 				6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */,
 				__PBXFileRef_Package.swift /* Package.swift */,
