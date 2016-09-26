@@ -8,7 +8,7 @@ import Base32
 
 let key = "Jefe"
 let data = "what do ya want for nothing?"
-let hmacMD5 = base16Encode(HMAC(algorithm: .MD5, key: key).update(data).final()).lowercaseString
+let hmacMD5 = base16Encode(HMAC(algorithm: .md5, key: key).update(data).final()).lowercased()
 if hmacMD5 == "750c783e6ab0b503eaa86e310a5db738" {
     print("Good!")
 }
