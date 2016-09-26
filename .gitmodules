@@ -1,6 +1,3 @@
-[submodule "Carthage/Checkouts/xcconfigs"]
-	path = Carthage/Checkouts/xcconfigs
-	url = https://github.com/jspahrsummers/xcconfigs.git
 [submodule "Carthage/Checkouts/Base32"]
 	path = Carthage/Checkouts/Base32
 	url = https://github.com/norio-nomura/Base32.git

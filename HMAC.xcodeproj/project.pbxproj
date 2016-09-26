@@ -7,904 +7,419 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6CA3FB3D1A771E15003010D4 /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
-		6CA3FB3E1A771E15003010D4 /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
-		6CA3FB401A771E3F003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA3FB411A771E41003010D4 /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA5743C1BC74B9C0093F85F /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA5743D1BC74BA20093F85F /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
-		6CA5743E1BC74BA80093F85F /* HMAC_bridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CA5743F1BC74BAD0093F85F /* HMAC_bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */; };
-		6CB02D821A7605BD00868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB02D7C1A7605BD00868654 /* HMAC.framework */; };
-		6CB02D8F1A7605BD00868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
-		6CB02DC31A76097A00868654 /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB02DB81A76097A00868654 /* HMAC.framework */; };
-		6CB02DD41A760D4100868654 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
-		6CB02DD51A760D4100868654 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02DD31A760D4100868654 /* HMAC.swift */; };
-		6CB02DD61A760D8100868654 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB02D8E1A7605BD00868654 /* HMACTests.swift */; };
-		6CB02DDA1A7610B000868654 /* HMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB02D811A7605BD00868654 /* HMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C3653641D98B7B000167EED /* BridgeToHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */; };
+		_LinkFileRef_HMAC_via_HMACTests /* HMAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_HMAC" /* HMAC.framework */; };
+		__src_cc_ref_Sources/HMAC/HMAC.swift /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/HMAC/HMAC.swift /* HMAC.swift */; };
+		__src_cc_ref_Tests/HMACTests/HMACTests.swift /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/HMACTests/HMACTests.swift /* HMACTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6CB02D891A7605BD00868654 /* PBXContainerItemProxy */ = {
+		6C3E51351D98B5B000C5A5F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CB02D731A7605BD00868654 /* Project object */;
+			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6CB02D7B1A7605BD00868654;
+			remoteGlobalIDString = "______Target_HMAC";
 			remoteInfo = HMAC;
 		};
-		6CB02DC41A76097A00868654 /* PBXContainerItemProxy */ = {
+		6CDCD8661D98B7FC00A65866 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CB02D731A7605BD00868654 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CB02DB71A76097A00868654;
-			remoteInfo = HMAC;
-		};
-		6CF9184C1D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7981A74E80600AC539F;
-			remoteInfo = "Base32-Mac";
+			remoteGlobalIDString = "_____Product_Base32";
+			remoteInfo = Base32;
 		};
-		6CF9184E1D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+		6CDCD8681D98B7FC00A65866 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7A31A74E80600AC539F;
-			remoteInfo = "Base32-MacTests";
+			remoteGlobalIDString = "_____Product_Base32Tests";
+			remoteInfo = Base32Tests;
 		};
-		6CF918501D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
+		6CDCD86A1D98B7FC00A65866 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7D31A74E91700AC539F;
-			remoteInfo = "Base32-iOS";
-		};
-		6CF918521D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CA0A7DD1A74E91800AC539F;
-			remoteInfo = "Base32-iOSTests";
-		};
-		6CF918541D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CCCF1EB1BC20835003CE287;
-			remoteInfo = "Base32-watchOS";
-		};
-		6CF918561D9895BB007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6CA0A8071A75135D00AC539F;
+			remoteGlobalIDString = "_____Product_SecEncodeTransformTests";
 			remoteInfo = SecEncodeTransformTests;
 		};
-		6CF918581D989612007DC1C1 /* PBXContainerItemProxy */ = {
+		6CDCD86C1D98B8E100A65866 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+			containerPortal = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 6CA0A7971A74E80600AC539F;
-			remoteInfo = "Base32-Mac";
-		};
-		6CF9185A1D989619007DC1C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6CA0A7D21A74E91700AC539F;
-			remoteInfo = "Base32-iOS";
+			remoteGlobalIDString = "______Target_Base32";
+			remoteInfo = Base32;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAC_bridge.m; sourceTree = "<group>"; };
-		6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC_bridge.h; sourceTree = "<group>"; };
-		6CA3FB861A774A7B003010D4 /* HMAC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HMAC.playground; sourceTree = "<group>"; };
-		6CA5742B1BC74A740093F85F /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CA574341BC74AB20093F85F /* watchOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Application.xcconfig"; sourceTree = "<group>"; };
-		6CA574351BC74AB20093F85F /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
-		6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		6CA574371BC74AB20093F85F /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		6CA574411BC74C070093F85F /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
-		6CA574421BC74C070093F85F /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
-		6CA574431BC74C070093F85F /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		6CA574441BC74C070093F85F /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		6CB02D7C1A7605BD00868654 /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CB02D801A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CB02D811A7605BD00868654 /* HMAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMAC.h; sourceTree = "<group>"; };
-		6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HMAC-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CB02D8D1A7605BD00868654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CB02D8E1A7605BD00868654 /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
-		6CB02D981A7605EE00868654 /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
-		6CB02D9B1A76092B00868654 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
-		6CB02D9D1A76092B00868654 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		6CB02D9E1A76092B00868654 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
-		6CB02D9F1A76092B00868654 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		6CB02DA01A76092B00868654 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
-		6CB02DA21A76092B00868654 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
-		6CB02DA31A76092B00868654 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		6CB02DA41A76092B00868654 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
-		6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
-		6CB02DA91A76092B00868654 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
-		6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
-		6CB02DAB1A76092B00868654 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
-		6CB02DAE1A76092B00868654 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
-		6CB02DAF1A76092B00868654 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
-		6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
-		6CB02DB11A76092B00868654 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		6CB02DB21A76092B00868654 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6CB02DB81A76097A00868654 /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HMAC-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CB02DD11A760C3400868654 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		6CB02DD21A760C3400868654 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6CB02DD31A760D4100868654 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Base32.xcodeproj; path = Carthage/Checkouts/Base32/Base32.xcodeproj; sourceTree = "<group>"; };
+		6C3E51371D98B6AB00C5A5F6 /* BridgeToHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeToHMAC.h; sourceTree = "<group>"; };
+		6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Base32.xcodeproj; path = Carthage/Checkouts/Base32/Base32.xcodeproj; sourceTree = "<group>"; };
+		6CDCD86E1D98BDA000A65866 /* HMAC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HMAC.playground; sourceTree = "<group>"; };
+		6CDCD86F1D98BE3000A65866 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CDCD8701D98BE3000A65866 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		__PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HMAC.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeToHMAC.m; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/HMAC/HMAC.swift /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/HMACTests/HMACTests.swift /* HMACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
+		"_____Product_HMAC" /* HMAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HMAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_HMACTests" /* HMACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HMACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6CA574271BC74A740093F85F /* Frameworks */ = {
+		"___LinkPhase_HMAC" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CB02D781A7605BD00868654 /* Frameworks */ = {
+		"___LinkPhase_HMACTests" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02D841A7605BD00868654 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CB02D881A7605BD00868654 /* HMAC.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DB41A76097A00868654 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DBF1A76097A00868654 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CB02DC31A76097A00868654 /* HMAC.framework in Frameworks */,
+				_LinkFileRef_HMAC_via_HMACTests /* HMAC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6CA574331BC74AB20093F85F /* watchOS */ = {
+		6C3E51361D98B6AB00C5A5F6 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				6CA574341BC74AB20093F85F /* watchOS-Application.xcconfig */,
-				6CA574351BC74AB20093F85F /* watchOS-Base.xcconfig */,
-				6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */,
-				6CA574371BC74AB20093F85F /* watchOS-StaticLibrary.xcconfig */,
+				6C3E51371D98B6AB00C5A5F6 /* BridgeToHMAC.h */,
 			);
-			path = watchOS;
+			path = include;
 			sourceTree = "<group>";
 		};
-		6CA574401BC74C070093F85F /* tvOS */ = {
+		6CDCD8611D98B7FC00A65866 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CA574411BC74C070093F85F /* tvOS-Application.xcconfig */,
-				6CA574421BC74C070093F85F /* tvOS-Base.xcconfig */,
-				6CA574431BC74C070093F85F /* tvOS-Framework.xcconfig */,
-				6CA574441BC74C070093F85F /* tvOS-StaticLibrary.xcconfig */,
-			);
-			name = tvOS;
-			path = Carthage/Checkouts/xcconfigs/tvOS;
-			sourceTree = SOURCE_ROOT;
-		};
-		6CB02D721A7605BD00868654 = {
-			isa = PBXGroup;
-			children = (
-				6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */,
-				6CA3FB861A774A7B003010D4 /* HMAC.playground */,
-				6CB02DD21A760C3400868654 /* README.md */,
-				6CB02DD11A760C3400868654 /* LICENSE */,
-				6CB02D981A7605EE00868654 /* Cartfile.private */,
-				6CB02D7E1A7605BD00868654 /* HMAC */,
-				6CB02D8B1A7605BD00868654 /* HMACTests */,
-				6CB02D991A76092B00868654 /* xcconfigs */,
-				6CB02D7D1A7605BD00868654 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		6CB02D7D1A7605BD00868654 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02D7C1A7605BD00868654 /* HMAC.framework */,
-				6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */,
-				6CB02DB81A76097A00868654 /* HMAC.framework */,
-				6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */,
-				6CA5742B1BC74A740093F85F /* HMAC.framework */,
+				6CDCD8671D98B7FC00A65866 /* Base32.framework */,
+				6CDCD8691D98B7FC00A65866 /* Base32Tests.xctest */,
+				6CDCD86B1D98B7FC00A65866 /* SecEncodeTransformTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6CB02D7E1A7605BD00868654 /* HMAC */ = {
+		TestProducts_ /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6CB02D811A7605BD00868654 /* HMAC.h */,
-				6CB02DD31A760D4100868654 /* HMAC.swift */,
-				6CB02D7F1A7605BD00868654 /* Supporting Files */,
-				6CA3FB3F1A771E33003010D4 /* HMAC_bridge.h */,
-				6CA3FB3C1A771E15003010D4 /* HMAC_bridge.m */,
+				"_____Product_HMACTests" /* HMACTests.xctest */,
 			);
-			path = HMAC;
+			name = Tests;
 			sourceTree = "<group>";
 		};
-		6CB02D7F1A7605BD00868654 /* Supporting Files */ = {
+		"___RootGroup_" = {
 			isa = PBXGroup;
 			children = (
-				6CB02D801A7605BD00868654 /* Info.plist */,
+				6CDCD86F1D98BE3000A65866 /* README.md */,
+				6CDCD8701D98BE3000A65866 /* LICENSE */,
+				6CDCD86E1D98BDA000A65866 /* HMAC.playground */,
+				6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */,
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
 			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6CB02D8B1A7605BD00868654 /* HMACTests */ = {
+		"____Products_" /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CB02D8E1A7605BD00868654 /* HMACTests.swift */,
-				6CB02D8C1A7605BD00868654 /* Supporting Files */,
-			);
-			path = HMACTests;
-			sourceTree = "<group>";
-		};
-		6CB02D8C1A7605BD00868654 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02D8D1A7605BD00868654 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6CB02D991A76092B00868654 /* xcconfigs */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02D9A1A76092B00868654 /* Base */,
-				6CB02DA71A76092B00868654 /* iOS */,
-				6CB02DAC1A76092B00868654 /* Mac OS X */,
-				6CA574401BC74C070093F85F /* tvOS */,
-				6CA574331BC74AB20093F85F /* watchOS */,
-				6CB02DB21A76092B00868654 /* README.md */,
-			);
-			name = xcconfigs;
-			path = Carthage/Checkouts/xcconfigs;
-			sourceTree = "<group>";
-		};
-		6CB02D9A1A76092B00868654 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02D9B1A76092B00868654 /* Common.xcconfig */,
-				6CB02D9C1A76092B00868654 /* Configurations */,
-				6CB02DA11A76092B00868654 /* Targets */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6CB02D9C1A76092B00868654 /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02D9D1A76092B00868654 /* Debug.xcconfig */,
-				6CB02D9E1A76092B00868654 /* Profile.xcconfig */,
-				6CB02D9F1A76092B00868654 /* Release.xcconfig */,
-				6CB02DA01A76092B00868654 /* Test.xcconfig */,
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
-		6CB02DA11A76092B00868654 /* Targets */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02DA21A76092B00868654 /* Application.xcconfig */,
-				6CB02DA31A76092B00868654 /* Framework.xcconfig */,
-				6CB02DA41A76092B00868654 /* StaticLibrary.xcconfig */,
-			);
-			path = Targets;
-			sourceTree = "<group>";
-		};
-		6CB02DA71A76092B00868654 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */,
-				6CB02DA91A76092B00868654 /* iOS-Base.xcconfig */,
-				6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */,
-				6CB02DAB1A76092B00868654 /* iOS-StaticLibrary.xcconfig */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		6CB02DAC1A76092B00868654 /* Mac OS X */ = {
-			isa = PBXGroup;
-			children = (
-				6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */,
-				6CB02DAE1A76092B00868654 /* Mac-Base.xcconfig */,
-				6CB02DAF1A76092B00868654 /* Mac-DynamicLibrary.xcconfig */,
-				6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */,
-				6CB02DB11A76092B00868654 /* Mac-StaticLibrary.xcconfig */,
-			);
-			path = "Mac OS X";
-			sourceTree = "<group>";
-		};
-		6CF918441D9895BB007DC1C1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6CF9184D1D9895BB007DC1C1 /* Base32.framework */,
-				6CF9184F1D9895BB007DC1C1 /* Base32-MacTests.xctest */,
-				6CF918511D9895BB007DC1C1 /* Base32.framework */,
-				6CF918531D9895BB007DC1C1 /* Base32-iOSTests.xctest */,
-				6CF918551D9895BB007DC1C1 /* Base32.framework */,
-				6CF918571D9895BB007DC1C1 /* SecEncodeTransformTests.xctest */,
+				TestProducts_ /* Tests */,
+				"_____Product_HMAC" /* HMAC.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_BridgeToHMAC" /* BridgeToHMAC */,
+				"_______Group_HMAC" /* HMAC */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_BridgeToHMAC" /* BridgeToHMAC */ = {
+			isa = PBXGroup;
+			children = (
+				6C3E51361D98B6AB00C5A5F6 /* include */,
+				__PBXFileRef_Sources/BridgeToHMAC/BridgeToHMAC.m /* BridgeToHMAC.m */,
+			);
+			name = BridgeToHMAC;
+			path = Sources/BridgeToHMAC;
+			sourceTree = "<group>";
+		};
+		"_______Group_HMAC" /* HMAC */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Sources/HMAC/HMAC.swift /* HMAC.swift */,
+			);
+			name = HMAC;
+			path = Sources/HMAC;
+			sourceTree = "<group>";
+		};
+		"_______Group_HMACTests" /* HMACTests */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/HMACTests/HMACTests.swift /* HMACTests.swift */,
+			);
+			name = HMACTests;
+			path = Tests/HMACTests;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_HMACTests" /* HMACTests */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		6CA574281BC74A740093F85F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CA5743E1BC74BA80093F85F /* HMAC_bridge.h in Headers */,
-				6CA5743C1BC74B9C0093F85F /* HMAC.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02D791A7605BD00868654 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CB02D821A7605BD00868654 /* HMAC.h in Headers */,
-				6CA3FB401A771E3F003010D4 /* HMAC_bridge.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DB51A76097A00868654 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CB02DDA1A7610B000868654 /* HMAC.h in Headers */,
-				6CA3FB411A771E41003010D4 /* HMAC_bridge.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		6CA5742A1BC74A740093F85F /* HMAC-watchOS */ = {
+		"______Target_HMAC" /* HMAC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CA574321BC74A740093F85F /* Build configuration list for PBXNativeTarget "HMAC-watchOS" */;
+			buildConfigurationList = "_______Confs_HMAC" /* Build configuration list for PBXNativeTarget "HMAC" */;
 			buildPhases = (
-				6CA574261BC74A740093F85F /* Sources */,
-				6CA574271BC74A740093F85F /* Frameworks */,
-				6CA574281BC74A740093F85F /* Headers */,
-				6CA574291BC74A740093F85F /* Resources */,
+				CompilePhase_HMAC /* Sources */,
+				"___LinkPhase_HMAC" /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "HMAC-watchOS";
+			name = HMAC;
 			productName = HMAC;
-			productReference = 6CA5742B1BC74A740093F85F /* HMAC.framework */;
+			productReference = "_____Product_HMAC" /* HMAC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6CB02D7B1A7605BD00868654 /* HMAC-Mac */ = {
+		"______Target_HMACTests" /* HMACTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CB02D921A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-Mac" */;
+			buildConfigurationList = "_______Confs_HMACTests" /* Build configuration list for PBXNativeTarget "HMACTests" */;
 			buildPhases = (
-				6CB02D771A7605BD00868654 /* Sources */,
-				6CB02D781A7605BD00868654 /* Frameworks */,
-				6CB02D791A7605BD00868654 /* Headers */,
-				6CB02D7A1A7605BD00868654 /* Resources */,
+				CompilePhase_HMACTests /* Sources */,
+				"___LinkPhase_HMACTests" /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6CDCD86D1D98B8E100A65866 /* PBXTargetDependency */,
+				__Dependency_HMAC /* PBXTargetDependency */,
 			);
-			name = "HMAC-Mac";
-			productName = HMAC;
-			productReference = 6CB02D7C1A7605BD00868654 /* HMAC.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6CB02D861A7605BD00868654 /* HMAC-MacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CB02D951A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-MacTests" */;
-			buildPhases = (
-				6CB02D831A7605BD00868654 /* Sources */,
-				6CB02D841A7605BD00868654 /* Frameworks */,
-				6CB02D851A7605BD00868654 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6CF918591D989612007DC1C1 /* PBXTargetDependency */,
-				6CB02D8A1A7605BD00868654 /* PBXTargetDependency */,
-			);
-			name = "HMAC-MacTests";
+			name = HMACTests;
 			productName = HMACTests;
-			productReference = 6CB02D871A7605BD00868654 /* HMAC-MacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6CB02DB71A76097A00868654 /* HMAC-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CB02DCB1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOS" */;
-			buildPhases = (
-				6CB02DB31A76097A00868654 /* Sources */,
-				6CB02DB41A76097A00868654 /* Frameworks */,
-				6CB02DB51A76097A00868654 /* Headers */,
-				6CB02DB61A76097A00868654 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "HMAC-iOS";
-			productName = HMAC;
-			productReference = 6CB02DB81A76097A00868654 /* HMAC.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6CB02DC11A76097A00868654 /* HMAC-iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6CB02DCE1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOSTests" */;
-			buildPhases = (
-				6CB02DBE1A76097A00868654 /* Sources */,
-				6CB02DBF1A76097A00868654 /* Frameworks */,
-				6CB02DC01A76097A00868654 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6CF9185B1D989619007DC1C1 /* PBXTargetDependency */,
-				6CB02DC51A76097A00868654 /* PBXTargetDependency */,
-			);
-			name = "HMAC-iOSTests";
-			productName = HMACTests;
-			productReference = 6CB02DC21A76097A00868654 /* HMAC-iOSTests.xctest */;
+			productReference = "_____Product_HMACTests" /* HMACTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6CB02D731A7605BD00868654 /* Project object */ = {
+		__RootObject_ /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Norio Nomura";
-				TargetAttributes = {
-					6CA5742A1BC74A740093F85F = {
-						CreatedOnToolsVersion = 7.0.1;
-						LastSwiftMigration = 0800;
-					};
-					6CB02D7B1A7605BD00868654 = {
-						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0800;
-					};
-					6CB02D861A7605BD00868654 = {
-						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0800;
-					};
-					6CB02DB71A76097A00868654 = {
-						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0800;
-					};
-					6CB02DC11A76097A00868654 = {
-						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 0800;
-					};
-				};
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = 6CB02D761A7605BD00868654 /* Build configuration list for PBXProject "HMAC" */;
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "HMAC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6CB02D721A7605BD00868654;
-			productRefGroup = 6CB02D7D1A7605BD00868654 /* Products */;
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 6CF918441D9895BB007DC1C1 /* Products */;
-					ProjectRef = 6CF918431D9895BB007DC1C1 /* Base32.xcodeproj */;
+					ProductGroup = 6CDCD8611D98B7FC00A65866 /* Products */;
+					ProjectRef = 6CDCD8601D98B7FC00A65866 /* Base32.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				6CB02D7B1A7605BD00868654 /* HMAC-Mac */,
-				6CB02D861A7605BD00868654 /* HMAC-MacTests */,
-				6CB02DB71A76097A00868654 /* HMAC-iOS */,
-				6CB02DC11A76097A00868654 /* HMAC-iOSTests */,
-				6CA5742A1BC74A740093F85F /* HMAC-watchOS */,
+				"______Target_HMAC" /* HMAC */,
+				"______Target_HMACTests" /* HMACTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		6CF9184D1D9895BB007DC1C1 /* Base32.framework */ = {
+		6CDCD8671D98B7FC00A65866 /* Base32.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Base32.framework;
-			remoteRef = 6CF9184C1D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			remoteRef = 6CDCD8661D98B7FC00A65866 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6CF9184F1D9895BB007DC1C1 /* Base32-MacTests.xctest */ = {
+		6CDCD8691D98B7FC00A65866 /* Base32Tests.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Base32-MacTests.xctest";
-			remoteRef = 6CF9184E1D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			fileType = file;
+			path = Base32Tests.xctest;
+			remoteRef = 6CDCD8681D98B7FC00A65866 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6CF918511D9895BB007DC1C1 /* Base32.framework */ = {
+		6CDCD86B1D98B7FC00A65866 /* SecEncodeTransformTests.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Base32.framework;
-			remoteRef = 6CF918501D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF918531D9895BB007DC1C1 /* Base32-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Base32-iOSTests.xctest";
-			remoteRef = 6CF918521D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF918551D9895BB007DC1C1 /* Base32.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Base32.framework;
-			remoteRef = 6CF918541D9895BB007DC1C1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6CF918571D9895BB007DC1C1 /* SecEncodeTransformTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
+			fileType = file;
 			path = SecEncodeTransformTests.xctest;
-			remoteRef = 6CF918561D9895BB007DC1C1 /* PBXContainerItemProxy */;
+			remoteRef = 6CDCD86A1D98B7FC00A65866 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
 
-/* Begin PBXResourcesBuildPhase section */
-		6CA574291BC74A740093F85F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02D7A1A7605BD00868654 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02D851A7605BD00868654 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DB61A76097A00868654 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DC01A76097A00868654 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		6CA574261BC74A740093F85F /* Sources */ = {
+		CompilePhase_HMAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				6CA5743D1BC74BA20093F85F /* HMAC.swift in Sources */,
-				6CA5743F1BC74BAD0093F85F /* HMAC_bridge.m in Sources */,
+				6C3653641D98B7B000167EED /* BridgeToHMAC.m in Sources */,
+				__src_cc_ref_Sources/HMAC/HMAC.swift /* HMAC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CB02D771A7605BD00868654 /* Sources */ = {
+		CompilePhase_HMACTests /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				6CA3FB3D1A771E15003010D4 /* HMAC_bridge.m in Sources */,
-				6CB02DD41A760D4100868654 /* HMAC.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02D831A7605BD00868654 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CB02D8F1A7605BD00868654 /* HMACTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DB31A76097A00868654 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CA3FB3E1A771E15003010D4 /* HMAC_bridge.m in Sources */,
-				6CB02DD51A760D4100868654 /* HMAC.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6CB02DBE1A76097A00868654 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CB02DD61A760D8100868654 /* HMACTests.swift in Sources */,
+				__src_cc_ref_Tests/HMACTests/HMACTests.swift /* HMACTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6CB02D8A1A7605BD00868654 /* PBXTargetDependency */ = {
+		6CDCD86D1D98B8E100A65866 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CB02D7B1A7605BD00868654 /* HMAC-Mac */;
-			targetProxy = 6CB02D891A7605BD00868654 /* PBXContainerItemProxy */;
+			name = Base32;
+			targetProxy = 6CDCD86C1D98B8E100A65866 /* PBXContainerItemProxy */;
 		};
-		6CB02DC51A76097A00868654 /* PBXTargetDependency */ = {
+		__Dependency_HMAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CB02DB71A76097A00868654 /* HMAC-iOS */;
-			targetProxy = 6CB02DC41A76097A00868654 /* PBXContainerItemProxy */;
-		};
-		6CF918591D989612007DC1C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Base32-Mac";
-			targetProxy = 6CF918581D989612007DC1C1 /* PBXContainerItemProxy */;
-		};
-		6CF9185B1D989619007DC1C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Base32-iOS";
-			targetProxy = 6CF9185A1D989619007DC1C1 /* PBXContainerItemProxy */;
+			target = "______Target_HMAC" /* HMAC */;
+			targetProxy = 6C3E51351D98B5B000C5A5F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6CA574301BC74A740093F85F /* Debug */ = {
+		_ReleaseConf_HMAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = HMAC/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		6CA574311BC74A740093F85F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CA574361BC74AB20093F85F /* watchOS-Framework.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = HMAC/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		6CB02D901A7605BD00868654 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02D9D1A76092B00868654 /* Debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6CB02D911A7605BD00868654 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02D9F1A76092B00868654 /* Release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMAC_Info.plist;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HMAC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/BridgeToHMAC/include/BridgeToHMAC.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		6CB02D931A7605BD00868654 /* Debug */ = {
+		_ReleaseConf_HMACTests /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = HMAC/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
-			};
-			name = Debug;
-		};
-		6CB02D941A7605BD00868654 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DB01A76092B00868654 /* Mac-Framework.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = HMAC/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMACTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		6CB02D961A7605BD00868654 /* Debug */ = {
+		"___DebugConf_HMAC" /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = HMACTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMAC_Info.plist;
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = HMAC;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/BridgeToHMAC/include/BridgeToHMAC.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		6CB02D971A7605BD00868654 /* Release */ = {
+		"___DebugConf_HMACTests" /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DAD1A76092B00868654 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = HMACTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/Mac";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
-			};
-			name = Release;
-		};
-		6CB02DCC1A76097A00868654 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */;
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = HMAC/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				INFOPLIST_FILE = HMAC.xcodeproj/HMACTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		6CB02DCD1A76097A00868654 /* Release */ = {
+		"_____Release_" /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DAA1A76092B00868654 /* iOS-Framework.xcconfig */;
+			baseConfigurationReference = __PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				INFOPLIST_FILE = HMAC/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
-		6CB02DCF1A76097A00868654 /* Debug */ = {
+		"_______Debug_" /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
+			baseConfigurationReference = __PBXFileRef_HMAC.xcodeproj/Configs/Project.xcconfig /* HMAC.xcodeproj/Configs/Project.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = HMACTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
-		};
-		6CB02DD01A76097A00868654 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CB02DA81A76092B00868654 /* iOS-Application.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = HMACTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.norio-nomura.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6CA574321BC74A740093F85F /* Build configuration list for PBXNativeTarget "HMAC-watchOS" */ = {
+		"___RootConfs_" /* Build configuration list for PBXProject "HMAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CA574301BC74A740093F85F /* Debug */,
-				6CA574311BC74A740093F85F /* Release */,
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		6CB02D761A7605BD00868654 /* Build configuration list for PBXProject "HMAC" */ = {
+		"_______Confs_HMAC" /* Build configuration list for PBXNativeTarget "HMAC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CB02D901A7605BD00868654 /* Debug */,
-				6CB02D911A7605BD00868654 /* Release */,
+				"___DebugConf_HMAC" /* Debug */,
+				_ReleaseConf_HMAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		6CB02D921A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-Mac" */ = {
+		"_______Confs_HMACTests" /* Build configuration list for PBXNativeTarget "HMACTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6CB02D931A7605BD00868654 /* Debug */,
-				6CB02D941A7605BD00868654 /* Release */,
+				"___DebugConf_HMACTests" /* Debug */,
+				_ReleaseConf_HMACTests /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6CB02D951A7605BD00868654 /* Build configuration list for PBXNativeTarget "HMAC-MacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CB02D961A7605BD00868654 /* Debug */,
-				6CB02D971A7605BD00868654 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6CB02DCB1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CB02DCC1A76097A00868654 /* Debug */,
-				6CB02DCD1A76097A00868654 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6CB02DCE1A76097A00868654 /* Build configuration list for PBXNativeTarget "HMAC-iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CB02DCF1A76097A00868654 /* Debug */,
-				6CB02DD01A76097A00868654 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6CB02D731A7605BD00868654 /* Project object */;
+	rootObject = __RootObject_ /* Project object */;
 }

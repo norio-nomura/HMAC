@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FE9C18A62BDD37B49CBC97D0B4E9792AB8BE7B03",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7C922E6AF074E8F10ED7485A9EEA80ACEF122127" : 9223372036854775807,
+    "FE9C18A62BDD37B49CBC97D0B4E9792AB8BE7B03" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C2A23D75-F954-4F78-9D6F-B0590A48385D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7C922E6AF074E8F10ED7485A9EEA80ACEF122127" : "HMAC\/Carthage\/Checkouts\/Base32\/",
+    "FE9C18A62BDD37B49CBC97D0B4E9792AB8BE7B03" : "HMAC\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HMAC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HMAC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/norio-nomura\/Base32.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C922E6AF074E8F10ED7485A9EEA80ACEF122127"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/norio-nomura\/HMAC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FE9C18A62BDD37B49CBC97D0B4E9792AB8BE7B03"
+    }
+  ]
+}
