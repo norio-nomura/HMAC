@@ -408,7 +408,7 @@ class HMACTests: XCTestCase {
             let hmac = HMAC(algorithm: algorithm, key: key)
             for dataString in dataStringArray {
                 let data = dataString.base16DecodedData!
-                hmac.update(data)
+                _ = hmac.update(data)
             }
             XCTAssertEqual(base16Encode(hmac.final(), uppercase: false), expect)
         }
